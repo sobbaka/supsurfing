@@ -112,7 +112,7 @@
   font-weight: 700;
 }
 .hero {
-  background: no-repeat url("../../images/images/hero_image.jpg");
+  background: no-repeat url("../images/images/hero_image.jpg");
   background-size: cover;
   height: 100vh;
   min-height: 800px;
@@ -164,7 +164,7 @@
 }
 
 .rent {
-  background: no-repeat url("../../../images/images/rent_background.jpg");
+  background: no-repeat url("../images/images/rent_background.jpg");
   background-size: cover;
   min-height: 1096px;
 }
@@ -307,7 +307,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 42px;
 }
 .gift-card__footer {
   height: 49px;
