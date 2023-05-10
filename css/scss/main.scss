@@ -1,24 +1,23 @@
 @import "reset.css";
 @import "./utils/font";
-
-@import "./blocks/header";
-
-@import "./blocks/logo";
-@import "./blocks/lang";
-@import "./blocks/navigation";
-@import "./blocks/hero";
-
-@import "./blocks/about";
-@import "./blocks/weather";
-@import "./blocks/subscribe";
-@import "./blocks/rent";
+@import "./utils/mixin";
 
 .text {
   @include text($black, $font-rail);
   padding-bottom: 16px;
 }
 
+.text-bold {
+  @include text($black, $font-rail);
+  padding-bottom: 16px;
+  font-weight: 700;
+}
+
 .title {
+  @include title($black, $font-rail);
+}
+
+.title-block {
   @include title($black, $font-rail);
   padding-bottom: 100px;
 }
@@ -47,3 +46,22 @@
 .column {
   max-width: 620px;
 }
+
+.row-grid {
+  display: grid;
+  column-gap: 40px;
+  grid-template-columns: 1fr 1fr;
+}
+
+@import "./blocks/header";
+@import "./blocks/logo";
+@import "./blocks/lang";
+@import "./blocks/navigation";
+@import "./blocks/hero";
+@import "./blocks/about";
+@import "./blocks/weather";
+@import "./blocks/subscribe";
+@import "./blocks/rent";
+@import "./blocks/gift";
+@import "./blocks/form";
+@import "./blocks/gift-card";

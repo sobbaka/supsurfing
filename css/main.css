@@ -3,6 +3,75 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Unbounded:wght@700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Unbounded:wght@700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Unbounded:wght@700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Unbounded:wght@700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Unbounded:wght@700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Unbounded:wght@700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Unbounded:wght@700;800&display=swap");
+.text {
+  font-family: "Raleway", sans-serif;
+  color: #393939;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  padding-bottom: 16px;
+}
+
+.text-bold {
+  font-family: "Raleway", sans-serif;
+  color: #393939;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  padding-bottom: 16px;
+  font-weight: 700;
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  color: #393939;
+  font-size: 35px;
+  font-weight: 800;
+}
+
+.title-block {
+  font-family: "Raleway", sans-serif;
+  color: #393939;
+  font-size: 35px;
+  font-weight: 800;
+  padding-bottom: 100px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+
+.image-wrapper {
+  width: 620px;
+  height: 296px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  max-width: 620px;
+}
+
+.row-grid {
+  display: grid;
+  column-gap: 40px;
+  grid-template-columns: 1fr 1fr;
+}
+
 .header {
   max-width: 1280px;
   margin: 0 auto;
@@ -161,46 +230,93 @@
   max-width: 100px;
 }
 
-.text {
-  font-family: "Raleway", sans-serif;
-  color: #393939;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 120%;
-  padding-bottom: 16px;
+.gift {
+  min-height: 512px;
+}
+.gift__text {
+  padding-bottom: 50px;
 }
 
-.title {
-  font-family: "Raleway", sans-serif;
-  color: #393939;
-  font-size: 35px;
-  font-weight: 800;
-  padding-bottom: 100px;
+.form__fieldset {
+  padding-bottom: 32px;
 }
-
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding-top: 200px;
-}
-
-.image-wrapper {
-  width: 620px;
-  height: 296px;
-  border-radius: 10px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.row {
+.form__row {
   display: flex;
   justify-content: space-between;
 }
+.form__column {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.form__input {
+  border: 1px solid #393939;
+  border-radius: 10px;
+  padding: 12px 20px;
+  color: rgba(57, 57, 57, 0.4);
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+.form__hours {
+  width: 30%;
+}
+.form__email {
+  width: 65%;
+}
+.form__submit {
+  padding: 17px 0;
+  width: 100%;
+  background-color: #03463d;
+  border-radius: 10px;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
 
-.column {
+.gift-card {
   max-width: 620px;
+  border: 1px solid #03463d;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.gift-card__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #03463d;
+  padding: 48px 63px 40px 10px;
+}
+.gift-card__logo {
+  width: 207px;
+  height: 50.14px;
+}
+.gift-card__title {
+  color: #03463d;
+  padding: 69px 0 50px;
+}
+.gift-card__tel {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+.gift-card__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.gift-card__footer {
+  height: 49px;
+  background-color: #03463d;
+}
+.gift-card__name {
+  padding: 20px 0 26px;
+  width: 75%;
+  border-bottom: 1px solid #393939;
 }
 
 /*# sourceMappingURL=main.css.map */

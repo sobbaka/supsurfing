@@ -1,0 +1,39 @@
+@import "../utils/mixin";
+
+.form {
+  &__fieldset {
+    padding-bottom: 32px;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+  }
+  &__input {
+    border: 1px solid $black;
+    border-radius: 10px;
+    padding: 12px 20px;
+
+    @include text-mixin($black-transperent, $font-rail, 20px, 400);
+  }
+
+  &__hours {
+    width: 30%;
+  }
+
+  &__email {
+    width: 65%;
+  }
+
+  &__submit {
+    padding: 17px 0;
+    width: 100%;
+    background-color: $green;
+    border-radius: 10px;
+    @include text-mixin($white, $font-rail, 20px, 700);
+  }
+}

@@ -1,0 +1,45 @@
+@import "../utils/mixin";
+
+.gift-card {
+  max-width: 620px;
+  border: 1px solid $green;
+  border-radius: 10px;
+  overflow: hidden;
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $green;
+    padding: 48px 63px 40px 10px;
+  }
+  &__logo {
+    width: 207px;
+    height: 50.14px;
+  }
+  &__title {
+    color: $green;
+    padding: 69px 0 50px;
+  }
+
+  &__tel {
+    @include text-mixin($white, $font-rail, 20px, 400);
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  &__footer {
+    height: 49px;
+    background-color: $green;
+  }
+
+  &__name {
+    padding: 20px 0 26px;
+    width: 75%;
+    border-bottom: 1px solid $black;
+  }
+}

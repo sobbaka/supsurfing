@@ -42,7 +42,7 @@
   </div>
   <div class="about">
     <div class="container">
-      <h2 class="title about__title">О нас</h2>
+      <h2 class="title-block about__title">О нас</h2>
       <div class="row">
         <div class="column image-wrapper">
           <img src="./images/images/about.jpg" alt="" class="about__image">
@@ -66,7 +66,7 @@
 
   <div class="weather">
     <div class="container">
-      <h2 class="title weather__title">Погода для sup серфинга</h2>
+      <h2 class="title-block weather__title">Погода для sup серфинга</h2>
       <div class="row">
         <div class="column image-wrapper">
           <img src="./images/images/about.jpg" alt="" class="about__image">
@@ -148,6 +148,47 @@
               к прогулке на sup бордах.
               Если Вы вдруг забыли солнцезащитный крем, мы
               с радостью его предоставим для комфортного катания.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="gift">
+    <div class="container">
+      <div class="row-grid">
+        <div class="column-grid">
+          <h2 class="title-block gift__title">Подарочный сертификат</h2>
+          <p class="text gift__text">Также вы можете приобрести подарочный сертификат. Стоимость равна почасовой аренды.
+          </p>
+
+          <form action="#" method="post" class="gift__form form">
+            <fieldset class="form__column form__fieldset">
+              <input type="text" name="name" id="name" class="form__input" placeholder="Имя Фамилия">
+              <input type="text" name="contact" id="contact" class="form__input" placeholder="Телефон или соц. сети">
+            </fieldset>
+            <fieldset class="form__row form__fieldset">
+              <input type="email" name="email" id="email" class="form__input form__email" placeholder="e-mail">
+              <input type="number" name="hours" id="hours" class="form__input form__hours" placeholder="Кол-во часов"
+                min="1" max="10">
+            </fieldset>
+            <button type="submit" class="form__submit">Отправить заявку</button>
+          </form>
+        </div>
+        <div class="column-grid">
+          <div class="gift__card gift-card">
+            <div class="gift-card__head">
+              <img src="./images/logo/logo.svg" alt="" class="gift-card__logo">
+              <a href="tel:+66755" class="gift-card__tel">+995 599 167 632</a>
+            </div>
+            <div class="gift-card__body">
+              <h5 class="title gift-card__title">Подарочный сертификат</h5>
+              <p class="text">Прогулка по Тбилисскому морю <br><span class="text-bold">2 часа</span>
+              <h5 class="title gift-card__name">Мария и Иван</h5>
+              </p>
+            </div>
+            <div class="gift-card__footer"></div>
+
           </div>
         </div>
       </div>

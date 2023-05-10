@@ -1,0 +1,8 @@
+@import "../utils/mixin";
+
+.gift {
+  min-height: 512px;
+  &__text {
+    padding-bottom: 50px;
+  }
+}
