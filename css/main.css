@@ -7,6 +7,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Unbounded:wght@700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Unbounded:wght@700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Unbounded:wght@700;800&display=swap");
+
 .text {
   font-family: "Raleway", sans-serif;
   color: #393939;
@@ -85,15 +86,18 @@
   backdrop-filter: blur(10px);
   padding: 12px 32px;
 }
+
 .header__controls {
   display: flex;
   align-items: center;
 }
+
 .header__nav {
   display: flex;
   margin-right: 100px;
   column-gap: 62px;
 }
+
 .header__lang {
   display: flex;
   column-gap: 16px;
@@ -105,18 +109,21 @@
   font-size: 20px;
   font-weight: 700;
 }
+
 .navigation__link {
   color: #fff;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   font-weight: 700;
 }
+
 .hero {
   background: no-repeat url("../images/images/hero_image.jpg");
   background-size: cover;
   height: 100vh;
   min-height: 800px;
 }
+
 .hero__title {
   color: #fff;
   font-family: "Unbounded", cursive;
@@ -125,6 +132,7 @@
   line-height: 99px;
   max-width: 612px;
 }
+
 .hero__subtitle {
   color: #fff;
   font-family: "Raleway", sans-serif;
@@ -139,9 +147,11 @@
   display: flex;
   justify-content: space-between;
 }
+
 .about__description {
   max-width: 620px;
 }
+
 .weather {
   padding-bottom: 200px;
 }
@@ -151,6 +161,7 @@
   height: 80px;
   position: fixed;
 }
+
 .subscribe__btn {
   width: 400px;
   padding: 12px 24px;
@@ -168,23 +179,28 @@
   background-size: cover;
   min-height: 1096px;
 }
+
 .rent__column-left {
   display: flex;
   row-gap: 50px;
   flex-direction: column;
 }
+
 .rent__item-left {
   max-width: 510px;
 }
+
 .rent__column-right {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .rent__item-right {
   width: 290px;
 }
+
 .rent__title {
   font-family: "Raleway", sans-serif;
   color: #fff;
@@ -192,6 +208,7 @@
   font-weight: 800;
   padding-bottom: 100px;
 }
+
 .rent__subtitle {
   color: #fff;
   font-family: "Raleway", sans-serif;
@@ -200,14 +217,17 @@
   line-height: 23px;
   padding-bottom: 20px;
 }
+
 .rent__subtitle--padding-32 {
   padding-bottom: 32px;
 }
+
 .rent__list-item {
   padding-bottom: 10px;
   list-style-type: disc;
   margin-left: 35px;
 }
+
 .rent__text {
   color: #fff;
   font-family: "Raleway", sans-serif;
@@ -215,17 +235,20 @@
   font-weight: 400;
   line-height: 120%;
 }
+
 .rent__text-big {
   color: #fff;
   font-family: "Unbounded", cursive;
   font-size: 35px;
   font-weight: 700;
 }
+
 .rent__price {
   display: flex;
   gap: 32px 127px;
   flex-wrap: wrap;
 }
+
 .rent__price-item {
   max-width: 100px;
 }
@@ -233,6 +256,7 @@
 .gift {
   min-height: 512px;
 }
+
 .gift__text {
   padding-bottom: 50px;
 }
@@ -240,15 +264,18 @@
 .form__fieldset {
   padding-bottom: 32px;
 }
+
 .form__row {
   display: flex;
   justify-content: space-between;
 }
+
 .form__column {
   display: flex;
   flex-direction: column;
   row-gap: 32px;
 }
+
 .form__input {
   border: 1px solid #393939;
   border-radius: 10px;
@@ -258,12 +285,15 @@
   font-size: 20px;
   font-weight: 400;
 }
+
 .form__hours {
   width: 30%;
 }
+
 .form__email {
   width: 65%;
 }
+
 .form__submit {
   padding: 17px 0;
   width: 100%;
@@ -281,6 +311,7 @@
   border-radius: 10px;
   overflow: hidden;
 }
+
 .gift-card__head {
   display: flex;
   align-items: center;
@@ -288,31 +319,37 @@
   background-color: #03463d;
   padding: 48px 63px 40px 10px;
 }
+
 .gift-card__logo {
   width: 207px;
   height: 50.14px;
 }
+
 .gift-card__title {
   color: #03463d;
   padding: 69px 0 50px;
 }
+
 .gift-card__tel {
   color: #fff;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   font-weight: 400;
 }
+
 .gift-card__body {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-bottom: 42px;
+  padding-bottom: 40px;
 }
+
 .gift-card__footer {
   height: 49px;
   background-color: #03463d;
 }
+
 .gift-card__name {
   padding: 20px 0 26px;
   width: 75%;
