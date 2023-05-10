@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Unbounded:wght@700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Unbounded:wght@700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Unbounded:wght@700;800&display=swap");
+
 .header {
   max-width: 1280px;
   margin: 0 auto;
@@ -16,15 +17,18 @@
   backdrop-filter: blur(10px);
   padding: 12px 32px;
 }
+
 .header__controls {
   display: flex;
   align-items: center;
 }
+
 .header__nav {
   display: flex;
   margin-right: 100px;
   column-gap: 62px;
 }
+
 .header__lang {
   display: flex;
   column-gap: 16px;
@@ -36,18 +40,21 @@
   font-size: 20px;
   font-weight: 700;
 }
+
 .navigation__link {
   color: #fff;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   font-weight: 700;
 }
+
 .hero {
-  background: no-repeat url("../../images/images/hero_image.jpg");
+  background: no-repeat url("../images/images/hero_image.jpg");
   background-size: cover;
   height: 100vh;
   min-height: 800px;
 }
+
 .hero__title {
   color: #fff;
   font-family: "Unbounded", cursive;
@@ -56,6 +63,7 @@
   line-height: 99px;
   max-width: 612px;
 }
+
 .hero__subtitle {
   color: #fff;
   font-family: "Raleway", sans-serif;
@@ -70,14 +78,17 @@
   display: flex;
   justify-content: space-between;
 }
+
 .about__description {
   max-width: 620px;
 }
+
 .subscribe {
   width: 400px;
   height: 80px;
   position: fixed;
 }
+
 .text {
   font-family: "Raleway", sans-serif;
   color: #393939;
