@@ -1,0 +1,67 @@
+@import "../utils/mixin";
+
+.rent {
+  background: no-repeat url("../../../images/images/rent_background.jpg");
+  background-size: cover;
+  min-height: 1096px;
+
+  &__column-left {
+    display: flex;
+    row-gap: 50px;
+    flex-direction: column;
+  }
+
+  &__item-left {
+    max-width: 510px;
+  }
+
+  &__column-right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item-right {
+    width: 290px;
+  }
+
+  &__title {
+    @include title($white, $font-rail);
+    padding-bottom: 100px;
+  }
+  &__subtitle {
+    @include text-mixin($white, $font-rail, 20px, 700);
+    line-height: 23px;
+    padding-bottom: 20px;
+  }
+
+  &__subtitle--padding-32 {
+    padding-bottom: 32px;
+  }
+
+  &__list-item {
+    padding-bottom: 10px;
+    list-style-type: disc;
+    margin-left: 35px;
+  }
+
+  &__text {
+    @include text-mixin($white, $font-rail, 20px, 400);
+    line-height: 120%;
+  }
+
+  &__text-big {
+    @include text-mixin($white, $font-unboun, 35px, 700);
+  }
+
+  &__price {
+    display: flex;
+    gap: 32px 127px;
+    flex-wrap: wrap;
+  }
+
+  &__price-item {
+    max-width: 100px;
+  }
+}

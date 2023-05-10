@@ -7,10 +7,11 @@
 @import "./blocks/lang";
 @import "./blocks/navigation";
 @import "./blocks/hero";
-@import "./utils/mixin";
 
 @import "./blocks/about";
-@import "./blocks/subscribe.scss";
+@import "./blocks/weather";
+@import "./blocks/subscribe";
+@import "./blocks/rent";
 
 .text {
   @include text($black, $font-rail);
