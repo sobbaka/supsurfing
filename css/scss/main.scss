@@ -1,0 +1,48 @@
+@import "reset.css";
+@import "./utils/font";
+
+@import "./blocks/header";
+
+@import "./blocks/logo";
+@import "./blocks/lang";
+@import "./blocks/navigation";
+@import "./blocks/hero";
+@import "./utils/mixin";
+
+@import "./blocks/about";
+@import "./blocks/subscribe.scss";
+
+.text {
+  @include text($black, $font-rail);
+  padding-bottom: 16px;
+}
+
+.title {
+  @include title($black, $font-rail);
+  padding-bottom: 100px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+
+.image-wrapper {
+  width: 620px;
+  height: 296px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  max-width: 620px;
+}

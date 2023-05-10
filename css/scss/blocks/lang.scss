@@ -1,0 +1,9 @@
+@import "../utils/mixin";
+
+.lang {
+  &__link {
+    @include text-mixin($white, $font-rail, 20px, 700);
+  }
+  &__link--active {
+  }
+}

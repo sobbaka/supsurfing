@@ -1,0 +1,21 @@
+@import "../utils/mixin";
+
+.hero {
+  background: no-repeat url("../../images/images/hero_image.jpg");
+  background-size: cover;
+  height: 100vh;
+  min-height: 800px;
+
+  &__title {
+    @include text-mixin($white, $font-unboun, 80px, 800);
+    line-height: 99px;
+    max-width: 612px;
+  }
+
+  &__subtitle {
+    @include text-mixin($white, $font-rail, 30px, 700);
+    line-height: 35px;
+    max-width: 612px;
+    padding-top: 50px;
+  }
+}

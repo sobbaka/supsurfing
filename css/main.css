@@ -1,0 +1,123 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Unbounded:wght@700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Unbounded:wght@700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Unbounded:wght@700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Unbounded:wght@700;800&display=swap");
+.header {
+  max-width: 1280px;
+  margin: 0 auto;
+  position: fixed;
+  display: flex;
+  top: 30px;
+  right: 0;
+  left: 0;
+  justify-content: space-between;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  padding: 12px 32px;
+}
+.header__controls {
+  display: flex;
+  align-items: center;
+}
+.header__nav {
+  display: flex;
+  margin-right: 100px;
+  column-gap: 62px;
+}
+.header__lang {
+  display: flex;
+  column-gap: 16px;
+}
+
+.lang__link {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.navigation__link {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.hero {
+  background: no-repeat url("../../images/images/hero_image.jpg");
+  background-size: cover;
+  height: 100vh;
+  min-height: 800px;
+}
+.hero__title {
+  color: #fff;
+  font-family: "Unbounded", cursive;
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 99px;
+  max-width: 612px;
+}
+.hero__subtitle {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+  max-width: 612px;
+  padding-top: 50px;
+}
+
+.about__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.about__description {
+  max-width: 620px;
+}
+.subscribe {
+  width: 400px;
+  height: 80px;
+  position: fixed;
+}
+.text {
+  font-family: "Raleway", sans-serif;
+  color: #393939;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  padding-bottom: 16px;
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  color: #393939;
+  font-size: 35px;
+  font-weight: 800;
+  padding-bottom: 100px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+
+.image-wrapper {
+  width: 620px;
+  height: 296px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  max-width: 620px;
+}
+
+/*# sourceMappingURL=main.css.map */

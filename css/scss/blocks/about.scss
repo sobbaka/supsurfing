@@ -1,0 +1,16 @@
+.about {
+  //padding-top: 200px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__image {
+  }
+
+  &__description {
+    max-width: 620px;
+  }
+
+  &__text:not(:last-child) {
+  }
+}

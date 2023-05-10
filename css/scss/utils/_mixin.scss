@@ -1,0 +1,28 @@
+@import "font";
+
+$background: #faffee; // body
+$white: #fff;
+$black: #393939;
+$green: #03463d;
+
+@mixin text($color, $font) {
+  font-family: $font;
+  color: $color;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+@mixin title($color, $font) {
+  font-family: $font;
+  color: $color;
+  font-size: 35px;
+  font-weight: 800;
+}
+
+@mixin text-mixin($color, $font, $font-size, $font-weight) {
+  color: $color;
+  font-family: $font;
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
