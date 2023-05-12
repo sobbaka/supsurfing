@@ -1,0 +1,43 @@
+@import "../utils/mixin";
+
+.services {
+  &__swiper-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+  }
+
+  &__text-bold {
+    margin-bottom: 10px;
+  }
+
+  &__list_padding {
+    padding-bottom: 20px;
+  }
+
+  &__slide {
+    min-height: 500px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__list-item {
+    padding-bottom: 4px;
+  }
+  &__text-comment {
+    padding-top: 5px;
+  }
+  &__list-item__circle {
+    list-style-type: disc;
+    list-style-position: inside;
+  }
+  &__footer {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid $black;
+    border-radius: 10px;
+    text-align: center;
+  }
+}
