@@ -1,0 +1,24 @@
+@import "../utils/mixin";
+
+.footer {
+  min-height: 383px;
+  background-color: $black;
+
+  &__container {
+    padding-top: 100px;
+  }
+
+  &__title {
+    @include text($white, $font-unboun);
+    padding-bottom: 40px;
+  }
+
+  &__text {
+    color: $white;
+  }
+  &__tel {
+    display: block;
+    color: $white;
+    padding-bottom: 16px;
+  }
+}

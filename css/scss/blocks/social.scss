@@ -1,0 +1,17 @@
+@import "../utils/mixin";
+
+.social {
+  display: flex;
+  column-gap: 33px;
+  &__item {
+    display: block;
+    width: 48px;
+    height: 48px;
+    background-color: $white;
+    text-align: center;
+    padding-top: 10px;
+  }
+  &__img {
+    width: 28px;
+  }
+}

@@ -5,6 +5,7 @@ $white: #fff;
 $black: #393939;
 $black-transperent: rgba(57, 57, 57, 0.4);
 $green: #03463d;
+$background: #faffee;
 
 @mixin text($color, $font) {
   font-family: $font;

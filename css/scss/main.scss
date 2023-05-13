@@ -3,6 +3,10 @@
 @import "./utils/mixin";
 @import "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css";
 
+.body {
+  background-color: $background;
+}
+
 .text {
   @include text($black, $font-rail);
   padding-bottom: 16px;
@@ -68,7 +72,14 @@
 @import "./blocks/gift-card";
 @import "./blocks/services";
 @import "./blocks/lakes";
+@import "./blocks/contacts";
+@import "./blocks/social";
+@import "./blocks/footer";
 
 .none {
   display: none;
+}
+
+.link__underline {
+  text-decoration: underline !important;
 }

@@ -1,0 +1,21 @@
+@import "../utils/mixin";
+
+.contacts {
+  padding-bottom: 200px;
+  &__row {
+    display: grid;
+    column-gap: 40px;
+    grid-template-columns: 3fr 1fr;
+  }
+
+  &__link {
+    display: block;
+    padding-bottom: 16px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
