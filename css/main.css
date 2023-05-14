@@ -13,6 +13,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Unbounded:wght@700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Unbounded:wght@700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Unbounded:wght@700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Unbounded:wght@700;800&display=swap");
 .body {
   background-color: #faffee;
 }
@@ -320,6 +321,7 @@
   align-items: center;
   text-align: center;
   padding-bottom: 42px;
+  background-color: #fff;
 }
 .gift-card__footer {
   height: 49px;
@@ -463,6 +465,26 @@
   display: block;
   color: #fff;
   padding-bottom: 16px;
+}
+
+.instagram {
+  overflow: hidden;
+  position: relative;
+}
+.instagram__btn-wrapper {
+  top: -150px;
+  position: relative;
+  max-width: 1280px;
+}
+.instagram__slide {
+  overflow: hidden;
+  border-radius: 10px;
+  max-width: 296px;
+  height: 296px;
+}
+.instagram__img {
+  width: 296px;
+  height: auto;
 }
 
 .none {

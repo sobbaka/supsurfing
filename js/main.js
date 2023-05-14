@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const subscribe = document.querySelector('.subscribe');
 
   subscribe.style.left = header.offsetLeft + 'px';
-  subscribe.style.top = subtitle.offsetTop + subtitle.offsetHeight + 100 + 'px';
+  subscribe.style.top = (subtitle.offsetTop + subtitle.offsetHeight) * 1.1 + 'px';
 
 
 

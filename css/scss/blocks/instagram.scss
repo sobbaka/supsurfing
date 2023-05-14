@@ -1,0 +1,23 @@
+@import "../utils/mixin";
+
+.instagram {
+  overflow: hidden;
+  position: relative;
+  &__btn-wrapper {
+    top: -150px;
+    position: relative;
+    max-width: 1280px;
+  }
+
+  &__slide {
+    overflow: hidden;
+    border-radius: 10px;
+    max-width: 296px;
+    height: 296px;
+  }
+
+  &__img {
+    width: 296px;
+    height: auto;
+  }
+}
