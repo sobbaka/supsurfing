@@ -31,7 +31,7 @@
 }
 
 .lakes__slide {
-  min-height: 554px;
+  // min-height: 554px;
 }
 
 .swiper {
@@ -41,4 +41,10 @@
 .btn-wrapper {
   top: -350px;
   position: relative;
+}
+
+@media (max-width: 1280px) {
+  .tours {
+    padding: 0 15px;
+  }
 }

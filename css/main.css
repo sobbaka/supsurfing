@@ -59,13 +59,16 @@
 }
 
 .image-wrapper {
-  width: 620px;
   height: 296px;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: flex-start;
+}
+
+.block-image {
+  border-radius: 10px;
 }
 
 .row {
@@ -83,6 +86,44 @@
   grid-template-columns: 1fr 1fr;
 }
 
+.container-grid {
+  display: grid;
+  column-gap: 40px;
+  grid-template-areas: "grid-title grid-title" "grid-left grid-right";
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-title {
+  grid-area: grid-title;
+  max-width: 620px;
+  width: 100%;
+}
+
+.grid-left {
+  grid-area: grid-left;
+  max-width: 620px;
+}
+
+.grid-right {
+  grid-area: grid-right;
+  max-width: 620px;
+}
+
+@media (max-width: 950px) {
+  .container-grid {
+    display: grid;
+    column-gap: 40px;
+    grid-template-areas: "grid-left" "grid-title" "grid-right";
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .container {
+    padding-top: 100px;
+  }
+  .title-block {
+    padding: 50px 0 32px;
+  }
+}
 .header {
   max-width: 1280px;
   margin: 0 auto;
@@ -147,6 +188,11 @@
   padding-top: 50px;
 }
 
+@media (max-width: 1280px) {
+  .hero {
+    padding: 0 15px;
+  }
+}
 .about__wrapper {
   display: flex;
   justify-content: space-between;
@@ -154,10 +200,20 @@
 .about__description {
   max-width: 620px;
 }
+@media (max-width: 1280px) {
+  .about {
+    padding: 0 15px;
+  }
+}
 .weather {
   padding-bottom: 200px;
 }
 
+@media (max-width: 1280px) {
+  .weather {
+    padding: 0 15px;
+  }
+}
 .subscribe {
   width: 400px;
   height: 80px;
@@ -243,6 +299,11 @@
   max-width: 100px;
 }
 
+@media (max-width: 1280px) {
+  .rent {
+    padding: 0 15px;
+  }
+}
 .gift {
   min-height: 512px;
 }
@@ -250,6 +311,11 @@
   padding-bottom: 50px;
 }
 
+@media (max-width: 1280px) {
+  .gift {
+    padding: 0 15px;
+  }
+}
 .form__fieldset {
   padding-bottom: 32px;
 }
@@ -370,6 +436,11 @@
   text-align: center;
 }
 
+@media (max-width: 1280px) {
+  .services {
+    padding: 0 15px;
+  }
+}
 .tours {
   overflow: hidden;
 }
@@ -396,10 +467,6 @@
   max-width: 1280px;
 }
 
-.lakes__slide {
-  min-height: 554px;
-}
-
 .swiper {
   height: 100%;
 }
@@ -409,6 +476,11 @@
   position: relative;
 }
 
+@media (max-width: 1280px) {
+  .tours {
+    padding: 0 15px;
+  }
+}
 .contacts {
   padding-bottom: 200px;
 }
@@ -427,6 +499,11 @@
   justify-content: space-between;
 }
 
+@media (max-width: 1280px) {
+  .contacts {
+    padding: 0 15px;
+  }
+}
 .social {
   display: flex;
   column-gap: 33px;
@@ -467,6 +544,11 @@
   padding-bottom: 16px;
 }
 
+@media (max-width: 1280px) {
+  .footer {
+    padding: 0 15px;
+  }
+}
 .instagram {
   overflow: hidden;
   position: relative;
@@ -487,6 +569,11 @@
   height: auto;
 }
 
+@media (max-width: 1280px) {
+  .instagram {
+    padding: 0 15px;
+  }
+}
 .none {
   display: none;
 }

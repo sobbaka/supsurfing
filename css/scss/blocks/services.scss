@@ -41,3 +41,9 @@
     text-align: center;
   }
 }
+
+@media (max-width: 1280px) {
+  .services {
+    padding: 0 15px;
+  }
+}
