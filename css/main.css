@@ -14,6 +14,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Unbounded:wght@700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Unbounded:wght@700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Unbounded:wght@700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Unbounded:wght@700;800&display=swap");
 .body {
   background-color: #faffee;
 }
@@ -101,14 +102,19 @@
 
 .grid-left {
   grid-area: grid-left;
-  max-width: 620px;
 }
 
 .grid-right {
   grid-area: grid-right;
-  max-width: 620px;
 }
 
+@media (max-width: 1280px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+  }
+}
 @media (max-width: 950px) {
   .container-grid {
     display: grid;
@@ -117,11 +123,72 @@
     grid-template-columns: 1fr;
     justify-items: center;
   }
+  .grid-left {
+    max-width: 620px;
+  }
+  .grid-right {
+    max-width: 620px;
+  }
   .container {
     padding-top: 100px;
   }
   .title-block {
     padding: 50px 0 32px;
+  }
+}
+@supports (display: grid) {
+  .scrollblock {
+    overflow: hidden;
+  }
+  .items {
+    position: relative;
+    width: calc(1270px + (100vw - 1280px) / 2);
+    overflow-y: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  .items::-webkit-scrollbar {
+    height: 3px;
+  }
+  .items::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0);
+  }
+  .items::-webkit-scrollbar-thumb {
+    height: 3px;
+    background-color: #03463d;
+    border-radius: 20px;
+  }
+  .items::-webkit-scrollbar-thumb:hover {
+    background-color: #03463d;
+  }
+  .items::-webkit-scrollbar:vertical {
+    display: none;
+  }
+  .items.active {
+    background: rgba(255, 255, 255, 0.3);
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+  }
+  .item {
+    display: inline-block;
+    min-height: 250px;
+    min-width: 400px;
+    margin-right: 40px;
+    margin-bottom: 25px;
+  }
+  @media screen and (max-width: 500px) {
+    .item {
+      min-height: 200px;
+      min-width: 200px;
+    }
+  }
+  .item .item.item11 {
+    background: transparent;
+  }
+}
+@media (max-width: 1280px) {
+  .items {
+    width: 100%;
   }
 }
 .header {
@@ -250,6 +317,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  row-gap: 50px;
 }
 .rent__item-right {
   width: 290px;
@@ -301,7 +369,22 @@
 
 @media (max-width: 1280px) {
   .rent {
-    padding: 0 15px;
+    padding: 0 15px 100px;
+  }
+  .rent__title {
+    margin: 0 auto;
+    max-width: 620px;
+    padding-bottom: 50px;
+  }
+  .rent__item-left {
+    max-width: 100%;
+    width: 100%;
+  }
+  .rent__item-right {
+    width: 100%;
+  }
+  .rent__price {
+    justify-content: space-around;
   }
 }
 .gift {
@@ -399,11 +482,6 @@
   border-bottom: 1px solid #393939;
 }
 
-.services__swiper-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 40px;
-}
 .services__text-bold {
   margin-bottom: 10px;
 }
@@ -416,6 +494,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  word-wrap: break-word;
+}
+.services__item {
+  white-space: normal;
 }
 .services__list-item {
   padding-bottom: 4px;
@@ -435,10 +517,31 @@
   border-radius: 10px;
   text-align: center;
 }
+.services__items {
+  width: 100%;
+  max-width: 1280px;
+}
 
 @media (max-width: 1280px) {
   .services {
     padding: 0 15px;
+  }
+}
+@media (min-width: 1280px) {
+  .services__items::-webkit-scrollbar {
+    display: none;
+  }
+  .services__items::-webkit-scrollbar-track {
+    display: none;
+  }
+  .services__items::-webkit-scrollbar-thumb {
+    display: none;
+  }
+  .services__items::-webkit-scrollbar-thumb:hover {
+    display: none;
+  }
+  .services__items::-webkit-scrollbar:vertical {
+    display: none;
   }
 }
 .tours {
@@ -561,8 +664,10 @@
 .instagram__slide {
   overflow: hidden;
   border-radius: 10px;
-  max-width: 296px;
+  min-height: 296px;
+  min-width: 296px;
   height: 296px;
+  width: 296px;
 }
 .instagram__img {
   width: 296px;

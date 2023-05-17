@@ -1,12 +1,6 @@
 @import "../utils/mixin";
 
 .services {
-  &__swiper-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 40px;
-  }
-
   &__text-bold {
     margin-bottom: 10px;
   }
@@ -21,7 +15,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    word-wrap: break-word;
   }
+
+  &__item {
+    white-space: normal;
+    // width: 400px;
+    // word-wrap: break-word;
+  }
+
   &__list-item {
     padding-bottom: 4px;
   }
@@ -40,10 +42,39 @@
     border-radius: 10px;
     text-align: center;
   }
+
+  &__items {
+    width: 100%;
+    max-width: 1280px;
+  }
 }
 
 @media (max-width: 1280px) {
   .services {
     padding: 0 15px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .services {
+    &__items::-webkit-scrollbar {
+      display: none;
+    }
+
+    &__items::-webkit-scrollbar-track {
+      display: none;
+    }
+
+    &__items::-webkit-scrollbar-thumb {
+      display: none;
+    }
+
+    &__items::-webkit-scrollbar-thumb:hover {
+      display: none;
+    }
+
+    &__items::-webkit-scrollbar:vertical {
+      display: none;
+    }
   }
 }

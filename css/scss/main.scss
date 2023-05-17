@@ -80,12 +80,18 @@
 
 .grid-left {
   grid-area: grid-left;
-  max-width: 620px;
 }
 
 .grid-right {
   grid-area: grid-right;
-  max-width: 620px;
+}
+
+@media (max-width: 1280px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+  }
 }
 
 @media (max-width: 950px) {
@@ -101,6 +107,14 @@
     justify-items: center;
   }
 
+  .grid-left {
+    max-width: 620px;
+  }
+
+  .grid-right {
+    max-width: 620px;
+  }
+
   .container {
     padding-top: 100px;
   }
@@ -110,6 +124,7 @@
   }
 }
 
+@import "./blocks/scrollblock";
 @import "./blocks/header";
 @import "./blocks/logo";
 @import "./blocks/lang";

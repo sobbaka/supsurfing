@@ -13,8 +13,10 @@
   &__slide {
     overflow: hidden;
     border-radius: 10px;
-    max-width: 296px;
+    min-height: 296px;
+    min-width: 296px;
     height: 296px;
+    width: 296px;
   }
 
   &__img {

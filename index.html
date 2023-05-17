@@ -6,8 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> -->
-  <!-- <link rel="stylesheet" href="./css/swiper.css"> -->
   <link rel="stylesheet" href="./css/main.css">
 
   <title>Sup surfing в Тбилиси</title>
@@ -15,8 +13,28 @@
 </head>
 
 <body class="body">
+
+  <!-- <div class="scrollblock">
+    <div class="container">
+      <div class="grid-item main">
+        <div class="items">
+          <div class="item item1"></div>
+          <div class="item item2"></div>
+          <div class="item item3"></div>
+          <div class="item item4"></div>
+          <div class="item item5"></div>
+          <div class="item item6"></div>
+          <div class="item item7"></div>
+          <div class="item item8"></div>
+          <div class="item item9"></div>
+          <div class="item item10"></div>
+          <div class="item item11"></div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
   <header class="header">
-    <!-- <div class="header__wrapper"></div> -->
     <img src="./images/logo/logo.svg" alt="sup.ge logo" class="logo header__logo">
     <div class="header__controls">
       <div class="header__nav navigation">
@@ -165,8 +183,8 @@
 
   <div class="gift">
     <div class="container">
-      <div class="row-grid">
-        <div class="column-grid">
+      <div class="container-grid">
+        <div class="grid-left">
           <h2 class="title-block gift__title">Подарочный сертификат</h2>
           <p class="text gift__text">Также вы можете приобрести подарочный сертификат. Стоимость равна почасовой аренды.
           </p>
@@ -184,7 +202,7 @@
             <button type="submit" class="form__submit">Отправить заявку</button>
           </form>
         </div>
-        <div class="column-grid">
+        <div class="grid-right">
           <div class="gift__card gift-card">
             <div class="gift-card__head">
               <img src="./images/logo/logo.svg" alt="" class="gift-card__logo">
@@ -208,64 +226,67 @@
     <div class="container">
       <h2 class="title-block">Дополнительные услуги</h2>
 
-      <!--  -->
-      <div class="swiper services__swiper">
+      <div class="grid-item main">
+        <div class="items services__items">
 
-        <!-- Additional required wrapper -->
-        <!--   -->
-        <div class="swiper-wrapper services__swiper-wrapper">
-          <!-- Slides -->
-          <!-- swiper-slide -->
-
-          <div class="swiper-slide services__slide">
-            <div class="service__body">
-              <h5 class="text-bold services__text-bold">Сопровождение и помощь</h5>
-              <ul class="services__list services__list_padding">
-                <li class="text services__list-item services__list-item__circle">Индивидуальное обучение</li>
-                <li class="text services__list-item services__list-item__circle">Занятия с детьми </li>
-                <li class="text services__list-item services__list-item__circle">Фото по желанию</li>
-              </ul>
-              <p class="text">Стоимость:</p>
-              <ul class="services__list">
-                <li class="text services__list-item">+ 5 ₾ - 30 мин </li>
-                <li class="text services__list-item">+ 10 ₾ - 1 час и больше</li>
-              </ul>
-              <p class="text services__text-comment">*(к стоимости аренды сапа)</p>
+          <div class="item item1 services__item">
+            <div class="services__slide">
+              <div class="service__body">
+                <h5 class="text-bold services__text-bold">Сопровождение и помощь</h5>
+                <ul class="services__list services__list_padding">
+                  <li class="text services__list-item services__list-item__circle">Индивидуальное обучение</li>
+                  <li class="text services__list-item services__list-item__circle">Занятия с детьми </li>
+                  <li class="text services__list-item services__list-item__circle">Фото по желанию</li>
+                </ul>
+                <p class="text">Стоимость:</p>
+                <ul class="services__list">
+                  <li class="text services__list-item">+ 5 ₾ - 30 мин </li>
+                  <li class="text services__list-item">+ 10 ₾ - 1 час и больше</li>
+                </ul>
+                <p class="text services__text-comment">*(к стоимости аренды сапа)</p>
+              </div>
+              <span class="text-bold services__footer">от 5 ₾</span>
             </div>
-            <span class="text-bold services__footer">от 5 ₾</span>
           </div>
 
-          <div class="swiper-slide services__slide">
-            <div class="service__body">
-              <h5 class="text-bold services__text-bold">«Сплав по морю» (+18)</h5>
-              <p class="text">Не обязательно возвращаться на точку старта! Если Вы хотите устроить sup сплав и завершить
-                катание в другой точке, то такая возможность есть. Вам необязательно тратить время и силы, чтобы
-                вернуться назад.
-                Мы заберем! 🚗</p>
-              <p class="text">Вы завершаете аренду на другом конце Тбилисского моря. Занимает примерно
-                1,5-2 часа в зависимости от скорости ветра.</p>
-              <p class="text">Сопровождение по желанию и зависит от уровня катания райдера.</p>
+          <div class="item item1 services__item">
+            <div class="services__slide">
+              <div class="service__body">
+                <h5 class="text-bold services__text-bold">«Сплав по морю» (+18)</h5>
+                <p class="text">Не обязательно возвращаться на точку старта! Если Вы хотите устроить sup сплав и
+                  завершить
+                  катание в другой точке, то такая возможность есть. Вам необязательно тратить время и силы, чтобы
+                  вернуться назад.
+                  Мы заберем! 🚗</p>
+                <p class="text">Вы завершаете аренду на другом конце Тбилисского моря. Занимает примерно
+                  1,5-2 часа в зависимости от скорости ветра.</p>
+                <p class="text">Сопровождение по желанию и зависит от уровня катания райдера.</p>
+              </div>
+              <span class="text-bold services__footer">50 ₾</span>
             </div>
-            <span class="text-bold services__footer">50 ₾</span>
           </div>
 
-          <div class="swiper-slide services__slide">
-            <div class="service__body">
-              <h5 class="text-bold services__text-bold">«Не могу вернуться!»</h5>
-              <p class="text">Если Вы увлеклись катанием
-                и потерялись, унесло течением или просто нет сил вернуться к точке старта, но Вы не планировали сплав,
-                то для нас это не проблема.</p>
-              <p class="text">Просто свяжитесь с нами и передайте свои координаты, мы заберём Ваши вещи и приедем за
-                Вами на авто.</p>
+          <div class="item item1 services__item">
+
+            <div class="services__slide">
+              <div class="service__body">
+                <h5 class="text-bold services__text-bold">«Не могу вернуться!»</h5>
+                <p class="text">Если Вы увлеклись катанием
+                  и потерялись, унесло течением или просто нет сил вернуться к точке старта, но Вы не планировали сплав,
+                  то для нас это не проблема.</p>
+                <p class="text">Просто свяжитесь с нами и передайте свои координаты, мы заберём Ваши вещи и приедем за
+                  Вами на авто.</p>
+              </div>
+              <span class="text-bold services__footer">+10 ₾ к часу</span>
             </div>
-            <span class="text-bold services__footer">+10 ₾ к часу</span>
+
           </div>
 
         </div>
       </div>
-
     </div>
   </div>
+
   <div class="tours">
     <div class="container">
       <div class="container-grid">
@@ -290,65 +311,33 @@
       </div>
 
 
-      <div class="swipe-block tours__swiper">
-        <!-- Slider main container -->
-        <div class="swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide lakes__slide">
-              <figure>
-                <img src="./images/images/zinval.jpg" alt="" class="lakes__img">
-                <figcaption class="text-bold lakes__text">Жинвальское водохранилище</figcaption>
-              </figure>
-            </div>
-
-            <div class="swiper-slide lakes__slide">
-              <figure>
-                <img src="./images/images/sioni.jpg" alt="" class="lakes__img">
-                <figcaption class="text-bold lakes__text">озеро Сиони</figcaption>
-              </figure>
-            </div>
-
-            <div class="swiper-slide lakes__slide">
-              <figure>
-                <img src="./images/images/paravani.jpg" alt="" class="lakes__img">
-                <figcaption class="text-bold lakes__text">озеро Паравани</figcaption>
-              </figure>
-            </div>
-
-            <div class="swiper-slide lakes__slide">
-              <figure>
-                <img src="./images/images/bazaleti.jpg" alt="" class="lakes__img">
-                <figcaption class="text-bold lakes__text">озеро Базалети</figcaption>
-              </figure>
-            </div>
-
-            <div class="swiper-slide lakes__slide">
-              <figure>
-                <img src="./images/images/zinval.jpg" alt="" class="lakes__img">
-                <figcaption class="text-bold lakes__text">Жинвальское водохранилище</figcaption>
-              </figure>
-            </div>
-
-            <!-- <div class="swiper-slide lakes__slide">
-            </div> -->
+      <div class="grid-item main">
+        <div class="items">
+          <div class="item item1">
+            <figure>
+              <img src="./images/images/zinval.jpg" alt="" class="lakes__img">
+              <figcaption class="text-bold lakes__text">Жинвальское водохранилище</figcaption>
+            </figure>
           </div>
-
-          <!-- If we need pagination -->
-          <!-- <div class="swiper-pagination"></div> -->
-
-          <!-- If we need navigation buttons -->
-
-          <!-- If we need scrollbar -->
-
+          <div class="item item2">
+            <figure>
+              <img src="./images/images/sioni.jpg" alt="" class="lakes__img">
+              <figcaption class="text-bold lakes__text">озеро Сиони</figcaption>
+            </figure>
+          </div>
+          <div class="item item3">
+            <figure>
+              <img src="./images/images/paravani.jpg" alt="" class="lakes__img">
+              <figcaption class="text-bold lakes__text">озеро Паравани</figcaption>
+            </figure>
+          </div>
+          <div class="item item4">
+            <figure>
+              <img src="./images/images/bazaleti.jpg" alt="" class="lakes__img">
+              <figcaption class="text-bold lakes__text">озеро Базалети</figcaption>
+            </figure>
+          </div>
         </div>
-
-      </div>
-
-      <div class="btn-wrapper">
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
       </div>
 
     </div>
@@ -360,52 +349,32 @@
         <a href="" class="title link__underline ">@sup.ge</a>
       </div>
 
-      <div class="swipe-block tours__swiper">
-        <!-- Slider main container -->
-        <div class="swiper-inst">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <div class="instagram__slide">
-                <img src="./images/images/zinval.jpg" alt="" class="instagram__img">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="instagram__slide">
-                <img src="./images/images/zinval.jpg" alt="" class="instagram__img">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="instagram__slide">
-                <img src="./images/images/zinval.jpg" alt="" class="instagram__img">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="instagram__slide">
-                <img src="./images/images/zinval.jpg" alt="" class="instagram__img">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="instagram__slide">
-                <img src="./images/images/zinval.jpg" alt="" class="instagram__img">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="instagram__slide">
-                <img src="./images/images/zinval.jpg" alt="" class="instagram__img">
-              </div>
-            </div>
+      <div class="grid-item main">
+        <div class="items">
 
+          <div class="item item4 instagram__slide">
+            <img src="./images/images/zinval.jpg" alt="" class="instagram__img">
+          </div>
+          <div class="item item4 instagram__slide">
+            <img src="./images/images/zinval.jpg" alt="" class="instagram__img">
+          </div>
+          <div class="item item4 instagram__slide">
+            <img src="./images/images/zinval.jpg" alt="" class="instagram__img">
+          </div>
+          <div class="item item4 instagram__slide">
+            <img src="./images/images/zinval.jpg" alt="" class="instagram__img">
+          </div>
+          <div class="item item4 instagram__slide">
+            <img src="./images/images/zinval.jpg" alt="" class="instagram__img">
+          </div>
+          <div class="item item4 instagram__slide">
+            <img src="./images/images/zinval.jpg" alt="" class="instagram__img">
+          </div>
+          <div class="item item4 instagram__slide">
+            <img src="./images/images/zinval.jpg" alt="" class="instagram__img">
           </div>
 
         </div>
-
-      </div>
-
-      <div class="instagram__btn-wrapper">
-        <div class="swiper-button-prev swiper-inst-next"></div>
-        <div class="swiper-button-next swiper-inst-prev"></div>
       </div>
 
     </div>
@@ -466,15 +435,8 @@
     </div>
   </footer>
 
-
-
-
-
-
   <script src="./js/main.js"></script>
-  <script type="module" src="./js/swiper.js"></script>
-  <script type="module" src="./js/swiper-inst.js"></script>
-
+  <script type="module" src="./js/scroll.js"></script>
 
 </body>
 
