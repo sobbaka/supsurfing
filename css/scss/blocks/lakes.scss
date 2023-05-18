@@ -6,6 +6,20 @@
   &__swiper {
     padding-top: 100px;
   }
+
+  &__slider {
+    padding-top: 100px;
+  }
+
+  @media (max-width: 1280px) {
+    padding: 0 15px;
+  }
+
+  @media (max-width: 750px) {
+    &__slider {
+      padding-top: 50px;
+    }
+  }
 }
 
 .lakes {
@@ -15,36 +29,5 @@
 
   &__text {
     padding-top: 32px;
-  }
-}
-
-.swipe-block {
-  width: 130%;
-}
-
-.special {
-  position: relative;
-}
-
-.btn-wrapper {
-  max-width: 1280px;
-}
-
-.lakes__slide {
-  // min-height: 554px;
-}
-
-.swiper {
-  height: 100%;
-}
-
-.btn-wrapper {
-  top: -350px;
-  position: relative;
-}
-
-@media (max-width: 1280px) {
-  .tours {
-    padding: 0 15px;
   }
 }

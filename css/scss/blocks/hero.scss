@@ -18,10 +18,23 @@
     max-width: 612px;
     padding-top: 50px;
   }
-}
 
-@media (max-width: 1280px) {
-  .hero {
+  @media (max-width: 1280px) {
     padding: 0 15px;
+  }
+
+  @media (max-width: 750px) {
+    background-position: -733px 0px;
+
+    &__title {
+      @include text-mixin($white, $font-unboun, 45px, 800);
+      line-height: 56px;
+      padding-top: 280px;
+    }
+
+    &__subtitle {
+      font-size: 20px;
+      line-height: 23px;
+    }
   }
 }

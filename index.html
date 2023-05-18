@@ -34,7 +34,7 @@
     </div>
   </div> -->
 
-  <header class="header">
+  <header class="header none">
     <img src="./images/logo/logo.svg" alt="sup.ge logo" class="logo header__logo">
     <div class="header__controls">
       <div class="header__nav navigation">
@@ -50,7 +50,7 @@
       </div>
     </div>
   </header>
-  <div class="subscribe">
+  <div class="subscribe none">
     <button class="subscribe__btn">Забронируйте прогулку</button>
   </div>
   <div class="hero">
@@ -68,9 +68,11 @@
         <h2 class="title-block about__title">О нас</h2>
       </div>
 
-      <div class="image-wrapper grid-left">
-        <img src="./images/images/about.jpg" alt="" class="block-image">
-      </div>
+      <!-- <div class="image-wrapper grid-left">
+
+      </div> -->
+
+      <img src="./images/images/about.jpg" alt="" class="block-image grid-left">
       <div class="grid-right">
         <p class="text about__text">
           SUP - гребля одним веслом на доске. Подходит для людей всех возрастов и уровней подготовки, очень прост в
@@ -88,15 +90,30 @@
     </div>
   </div>
 
+  <div class="container">
+    <a class="weatherwidget-io" href="https://forecast7.com/en/41d7244d83/tbilisi/" data-label_1="TBILISI"
+      data-label_2="WEATHER" data-font="Open Sans" data-icons="Climacons Animated" data-theme="original"
+      data-basecolor="#03463D" data-highcolor="#ffffff" data-lowcolor="#b1b1b1" data-cloudfill="#03463D"
+      data-raincolor="#ffffff">TBILISI WEATHER</a>
+  </div>
+
   <div class="weather">
     <div class="container container-grid">
+      <div class="weather__widget">
+        <a class="weatherwidget-io" href="https://forecast7.com/en/41d7244d83/tbilisi/" data-label_1="TBILISI"
+          data-label_2="WEATHER" data-font="Open Sans" data-icons="Climacons Animated" data-theme="original"
+          data-basecolor="#03463D" data-highcolor="#ffffff" data-lowcolor="#b1b1b1" data-cloudfill="#03463D"
+          data-raincolor="#ffffff">TBILISI WEATHER</a>
+      </div>
       <div class="grid-title">
         <h2 class="title-block weather__title">Погода для sup серфинга</h2>
       </div>
-
-
-      <div class="grid-left image-wrapper">
-        <img src="./images/images/about.jpg" alt="" class="about__image">
+      <div class="grid-left weather__grid-left none">
+        <a class="weatherwidget-io" href="https://forecast7.com/en/41d7244d83/tbilisi/" data-label_1="TBILISI"
+          data-label_2="WEATHER" data-font="Open Sans" data-icons="Climacons Animated" data-theme="original"
+          data-basecolor="#03463D" data-highcolor="#ffffff" data-lowcolor="#b1b1b1" data-cloudfill="#03463D"
+          data-raincolor="#ffffff">TBILISI WEATHER</a>
+        <!-- <img src="./images/images/about.jpg" alt="" class="about__image"> -->
       </div>
       <div class="grid-right weather__description">
         <p class="text weather__text">
@@ -293,9 +310,10 @@
         <div class="grid-title">
           <h2 class="title-block">Однодневные Sup туры</h2>
         </div>
-        <div class="grid-left image-wrapper">
+        <img src="./images/images/about.jpg" alt="" class="block-image grid-left">
+        <!-- <div class="grid-left image-wrapper">
           <img src="./images/images/about.jpg" alt="" class="about__image">
-        </div>
+        </div> -->
         <div class="grid-right weather__description">
           <p class="text">Мы устраиваем sup туры недалеко от Тбилиси на Жинвальское водохранилище, озеро Сиони, озеро
             Паравани, Цалкинское водохранилище, озеро Базалети. Трансфер от Тбилиси
@@ -311,7 +329,7 @@
       </div>
 
 
-      <div class="grid-item main">
+      <div class="grid-item main tours__slider">
         <div class="items">
           <div class="item item1">
             <figure>
@@ -344,8 +362,8 @@
   </div>
   <div class="instagram">
     <div class="container">
-      <div class="row">
-        <h2 class="title">Подпишитесь на наш Instagram</h2>
+      <div class="row instagram__header">
+        <h2 class="title-block">Подпишитесь на наш Instagram</h2>
         <a href="" class="title link__underline ">@sup.ge</a>
       </div>
 
@@ -437,6 +455,17 @@
 
   <script src="./js/main.js"></script>
   <script type="module" src="./js/scroll.js"></script>
+
+  <script>
+    !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+
+    // if (screen.width < 950) {
+    //   const weatherWidget = document.querySelector(".weather__widget");
+    //   console.log(weatherWidget)
+    //   console.log(screen.width)
+    //   weatherWidget.style.removeProperty("height");
+    // }
+  </script>
 
 </body>
 

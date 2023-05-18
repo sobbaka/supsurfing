@@ -18,10 +18,19 @@
     flex-direction: column;
     justify-content: space-between;
   }
-}
 
-@media (max-width: 1280px) {
-  .contacts {
-    padding: 0 15px;
+  @media (max-width: 1280px) {
+    padding: 0 15px 200px;
+  }
+  @media (max-width: 950px) {
+    padding: 0px 15px;
+    &__row {
+      row-gap: 50px;
+      grid-template-columns: 1fr;
+    }
+    &__info {
+      row-gap: 50px;
+      padding-bottom: 50px;
+    }
   }
 }

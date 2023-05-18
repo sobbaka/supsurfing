@@ -111,8 +111,6 @@
 @media (max-width: 1280px) {
   .row {
     flex-direction: column;
-    align-items: center;
-    row-gap: 50px;
   }
 }
 @media (max-width: 950px) {
@@ -122,9 +120,6 @@
     grid-template-areas: "grid-left" "grid-title" "grid-right";
     grid-template-columns: 1fr;
     justify-items: center;
-  }
-  .grid-left {
-    max-width: 620px;
   }
   .grid-right {
     max-width: 620px;
@@ -152,6 +147,8 @@
   }
   .items::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0);
+    background-color: rgb(206, 204, 204);
+    width: 900px;
   }
   .items::-webkit-scrollbar-thumb {
     height: 3px;
@@ -254,12 +251,29 @@
   max-width: 612px;
   padding-top: 50px;
 }
-
 @media (max-width: 1280px) {
   .hero {
     padding: 0 15px;
   }
 }
+@media (max-width: 750px) {
+  .hero {
+    background-position: -733px 0px;
+  }
+  .hero__title {
+    color: #fff;
+    font-family: "Unbounded", cursive;
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 56px;
+    padding-top: 280px;
+  }
+  .hero__subtitle {
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+
 .about__wrapper {
   display: flex;
   justify-content: space-between;
@@ -275,12 +289,21 @@
 .weather {
   padding-bottom: 200px;
 }
-
 @media (max-width: 1280px) {
   .weather {
     padding: 0 15px;
   }
 }
+@media (max-width: 950px) {
+  .weather {
+    padding-bottom: 100px;
+  }
+  .weather__widget {
+    height: 350px;
+    overflow: hidden;
+  }
+}
+
 .subscribe {
   width: 400px;
   height: 80px;
@@ -550,6 +573,19 @@
 .tours__swiper {
   padding-top: 100px;
 }
+.tours__slider {
+  padding-top: 100px;
+}
+@media (max-width: 1280px) {
+  .tours {
+    padding: 0 15px;
+  }
+}
+@media (max-width: 750px) {
+  .tours__slider {
+    padding-top: 50px;
+  }
+}
 
 .lakes__img {
   border-radius: 10px;
@@ -558,32 +594,6 @@
   padding-top: 32px;
 }
 
-.swipe-block {
-  width: 130%;
-}
-
-.special {
-  position: relative;
-}
-
-.btn-wrapper {
-  max-width: 1280px;
-}
-
-.swiper {
-  height: 100%;
-}
-
-.btn-wrapper {
-  top: -350px;
-  position: relative;
-}
-
-@media (max-width: 1280px) {
-  .tours {
-    padding: 0 15px;
-  }
-}
 .contacts {
   padding-bottom: 200px;
 }
@@ -601,12 +611,25 @@
   flex-direction: column;
   justify-content: space-between;
 }
-
 @media (max-width: 1280px) {
   .contacts {
-    padding: 0 15px;
+    padding: 0 15px 200px;
   }
 }
+@media (max-width: 950px) {
+  .contacts {
+    padding: 0px 15px;
+  }
+  .contacts__row {
+    row-gap: 50px;
+    grid-template-columns: 1fr;
+  }
+  .contacts__info {
+    row-gap: 50px;
+    padding-bottom: 50px;
+  }
+}
+
 .social {
   display: flex;
   column-gap: 33px;
@@ -669,22 +692,44 @@
   height: 296px;
   width: 296px;
 }
+.instagram__header {
+  padding-bottom: 100px;
+}
 .instagram__img {
   width: 296px;
   height: auto;
 }
-
 @media (max-width: 1280px) {
   .instagram {
     padding: 0 15px;
   }
 }
+@media (max-width: 950px) {
+  .instagram__header {
+    padding-bottom: 32px;
+  }
+}
+
 .none {
   display: none;
 }
 
 .link__underline {
   text-decoration: underline !important;
+}
+
+@media (max-width: 750px) {
+  .title {
+    font-size: 25px;
+  }
+  .title-block {
+    font-family: "Raleway", sans-serif;
+    color: #393939;
+    font-size: 35px;
+    font-weight: 800;
+    padding-top: 0px;
+    padding-bottom: 50px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
