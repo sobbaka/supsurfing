@@ -24,17 +24,22 @@
 
 .title-block {
   @include title($black, $font-rail);
+}
+
+.title__inner {
+  padding-bottom: 100px;
+}
+
+.title__outer {
   padding-bottom: 100px;
 }
 
 .container {
   max-width: 1280px;
   margin: 0 auto;
-  padding-top: 200px;
 }
 
 .image-wrapper {
-  // width: 620px;
   height: 296px;
   border-radius: 10px;
   overflow: hidden;
@@ -68,7 +73,6 @@
   grid-template-areas:
     "grid-title grid-title"
     "grid-left grid-right";
-
   grid-template-columns: 1fr 1fr;
 }
 
@@ -86,11 +90,40 @@
   grid-area: grid-right;
 }
 
+.block {
+  &__pd-top {
+    padding-top: 200px;
+  }
+  &__pd-top-bottom {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+@media (max-width: 950px) {
+  .title__inner {
+    padding-top: 50px;
+    padding-bottom: 32px;
+  }
+
+  .title__outer {
+    padding-bottom: 50px;
+  }
+
+  .block {
+    &__pd-top {
+      padding-top: 100px;
+    }
+    &__pd-top-bottom {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+  }
+}
+
 @media (max-width: 1280px) {
   .row {
     flex-direction: column;
-    // align-items: center;
-    // row-gap: 50px;
   }
 }
 
@@ -98,6 +131,7 @@
   .container-grid {
     display: grid;
     column-gap: 40px;
+    row-gap: 40px;
     grid-template-areas:
       "grid-left"
       "grid-title"
@@ -113,10 +147,6 @@
 
   .grid-right {
     max-width: 620px;
-  }
-
-  .container {
-    padding-top: 100px;
   }
 
   .title-block {
@@ -150,6 +180,12 @@
 
 .link__underline {
   text-decoration: underline !important;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    padding: 0 15px;
+  }
 }
 
 @media (max-width: 750px) {

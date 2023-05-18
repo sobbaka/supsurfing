@@ -50,13 +50,19 @@
   color: #393939;
   font-size: 35px;
   font-weight: 800;
+}
+
+.title__inner {
+  padding-bottom: 100px;
+}
+
+.title__outer {
   padding-bottom: 100px;
 }
 
 .container {
   max-width: 1280px;
   margin: 0 auto;
-  padding-top: 200px;
 }
 
 .image-wrapper {
@@ -108,6 +114,30 @@
   grid-area: grid-right;
 }
 
+.block__pd-top {
+  padding-top: 200px;
+}
+.block__pd-top-bottom {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+@media (max-width: 950px) {
+  .title__inner {
+    padding-top: 50px;
+    padding-bottom: 32px;
+  }
+  .title__outer {
+    padding-bottom: 50px;
+  }
+  .block__pd-top {
+    padding-top: 100px;
+  }
+  .block__pd-top-bottom {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
 @media (max-width: 1280px) {
   .row {
     flex-direction: column;
@@ -117,15 +147,13 @@
   .container-grid {
     display: grid;
     column-gap: 40px;
+    row-gap: 40px;
     grid-template-areas: "grid-left" "grid-title" "grid-right";
     grid-template-columns: 1fr;
     justify-items: center;
   }
   .grid-right {
     max-width: 620px;
-  }
-  .container {
-    padding-top: 100px;
   }
   .title-block {
     padding: 50px 0 32px;
@@ -239,6 +267,7 @@
   font-family: "Unbounded", cursive;
   font-size: 80px;
   font-weight: 800;
+  padding-top: 300px;
   line-height: 99px;
   max-width: 612px;
 }
@@ -285,21 +314,11 @@
   padding-bottom: 0px;
 }
 
-@media (max-width: 1280px) {
-  .about {
-    padding: 0 15px;
-  }
-}
 .weather {
   padding-bottom: 200px;
 }
 .weather__widget-mobile {
   display: none;
-}
-@media (max-width: 1280px) {
-  .weather {
-    padding: 0 15px 100px;
-  }
 }
 @media (max-width: 950px) {
   .weather {
@@ -307,7 +326,6 @@
   }
   .weather__widget-mobile {
     display: block;
-    padding-top: 100px;
     max-width: 620px;
     margin: 0 auto;
   }
@@ -409,9 +427,6 @@
 }
 
 @media (max-width: 1280px) {
-  .rent {
-    padding: 0 15px 100px;
-  }
   .rent__title {
     margin: 0 auto;
     max-width: 620px;
@@ -438,11 +453,6 @@
   padding-bottom: 50px;
 }
 
-@media (max-width: 1280px) {
-  .gift {
-    padding: 0 15px;
-  }
-}
 .form__fieldset {
   padding-bottom: 32px;
 }
@@ -566,11 +576,6 @@
   max-width: 1280px;
 }
 
-@media (max-width: 1280px) {
-  .services {
-    padding: 0 15px;
-  }
-}
 @media (min-width: 1280px) {
   .services__items::-webkit-scrollbar {
     display: none;
@@ -596,11 +601,6 @@
 }
 .tours__slider {
   padding-top: 100px;
-}
-@media (max-width: 1280px) {
-  .tours {
-    padding: 0 15px;
-  }
 }
 @media (max-width: 750px) {
   .tours__slider {
@@ -632,14 +632,9 @@
   flex-direction: column;
   justify-content: space-between;
 }
-@media (max-width: 1280px) {
-  .contacts {
-    padding: 0 15px 200px;
-  }
-}
 @media (max-width: 950px) {
   .contacts {
-    padding: 0px 15px;
+    padding-bottom: 100px;
   }
   .contacts__row {
     row-gap: 50px;
@@ -647,7 +642,6 @@
   }
   .contacts__info {
     row-gap: 50px;
-    padding-bottom: 50px;
   }
 }
 
@@ -720,11 +714,6 @@
   width: 296px;
   height: auto;
 }
-@media (max-width: 1280px) {
-  .instagram {
-    padding: 0 15px;
-  }
-}
 @media (max-width: 950px) {
   .instagram__header {
     padding-bottom: 32px;
@@ -739,6 +728,11 @@
   text-decoration: underline !important;
 }
 
+@media (max-width: 1280px) {
+  .container {
+    padding: 0 15px;
+  }
+}
 @media (max-width: 750px) {
   .title {
     font-size: 25px;

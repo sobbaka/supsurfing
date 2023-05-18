@@ -8,6 +8,7 @@
 
   &__title {
     @include text-mixin($white, $font-unboun, 80px, 800);
+    padding-top: 300px;
     line-height: 99px;
     max-width: 612px;
   }
