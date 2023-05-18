@@ -131,7 +131,7 @@
   .container-grid {
     display: grid;
     column-gap: 40px;
-    row-gap: 40px;
+    // row-gap: 40px;
     grid-template-areas:
       "grid-left"
       "grid-title"

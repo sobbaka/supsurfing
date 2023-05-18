@@ -28,6 +28,10 @@
     height: auto;
   }
 
+  &__link {
+    color: $green;
+  }
+
   @media (max-width: 950px) {
     &__header {
       padding-bottom: 32px;

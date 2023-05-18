@@ -4,9 +4,8 @@
   min-height: 383px;
   background-color: $black;
 
-  &__container {
-    padding-top: 100px;
-  }
+  padding-top: 100px;
+  padding-bottom: 100px;
 
   &__title {
     @include text($white, $font-unboun);
@@ -21,10 +20,20 @@
     color: $white;
     padding-bottom: 16px;
   }
-}
 
-@media (max-width: 1280px) {
-  .footer {
-    padding: 0 15px;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 950px) {
+    .footer {
+      &__row {
+        flex-direction: column-reverse;
+        row-gap: 30px;
+        max-width: 620px;
+        margin: 0 auto;
+      }
+    }
   }
 }
