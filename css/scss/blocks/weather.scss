@@ -1,16 +1,35 @@
 .weather {
   padding-bottom: 200px;
 
+  &__widget-mobile {
+    display: none;
+    // padding: 0 15px;
+  }
+
   @media (max-width: 1280px) {
-    padding: 0 15px;
+    padding: 0 15px 100px;
   }
 
   @media (max-width: 950px) {
     padding-bottom: 100px;
 
+    &__widget-mobile {
+      display: block;
+      padding-top: 100px;
+      max-width: 620px;
+      margin: 0 auto;
+    }
+
     &__widget {
-      height: 350px;
-      overflow: hidden;
+      display: none;
+    }
+
+    &__container {
+      padding-top: 50px;
+    }
+
+    &__title {
+      padding-top: 0px;
     }
   }
 }

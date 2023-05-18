@@ -65,7 +65,7 @@
   <div class="about">
     <div class="container container-grid">
       <div class="grid-title">
-        <h2 class="title-block about__title">О нас</h2>
+        <h2 class="title-block title-block__padding-top about__title">О нас</h2>
       </div>
 
       <!-- <div class="image-wrapper grid-left">
@@ -90,15 +90,15 @@
     </div>
   </div>
 
-  <div class="container">
-    <a class="weatherwidget-io" href="https://forecast7.com/en/41d7244d83/tbilisi/" data-label_1="TBILISI"
-      data-label_2="WEATHER" data-font="Open Sans" data-icons="Climacons Animated" data-theme="original"
-      data-basecolor="#03463D" data-highcolor="#ffffff" data-lowcolor="#b1b1b1" data-cloudfill="#03463D"
-      data-raincolor="#ffffff">TBILISI WEATHER</a>
-  </div>
 
   <div class="weather">
-    <div class="container container-grid">
+    <div class="weather__widget-mobile">
+      <a class="weatherwidget-io" href="https://forecast7.com/en/41d7244d83/tbilisi/" data-label_1="TBILISI"
+        data-label_2="WEATHER" data-font="Open Sans" data-icons="Climacons Animated" data-theme="original"
+        data-basecolor="#03463D" data-highcolor="#ffffff" data-lowcolor="#b1b1b1" data-cloudfill="#03463D"
+        data-raincolor="#ffffff">TBILISI WEATHER</a>
+    </div>
+    <div class="container container-grid weather__container">
       <div class="weather__widget">
         <a class="weatherwidget-io" href="https://forecast7.com/en/41d7244d83/tbilisi/" data-label_1="TBILISI"
           data-label_2="WEATHER" data-font="Open Sans" data-icons="Climacons Animated" data-theme="original"
@@ -126,13 +126,11 @@
     </div>
   </div>
 
-
-
   <div class="rent">
     <div class="container">
       <h2 class="rent__title">Аренда сап борда<br>
         Что входит в аренду?</h2>
-      <div class="row">
+      <div class="row rent__row">
         <div class="column rent__column-left">
 
           <div class="rent__item-left">
@@ -308,7 +306,7 @@
     <div class="container">
       <div class="container-grid">
         <div class="grid-title">
-          <h2 class="title-block">Однодневные Sup туры</h2>
+          <h2 class="title-block title-block__padding-top">Однодневные Sup туры</h2>
         </div>
         <img src="./images/images/about.jpg" alt="" class="block-image grid-left">
         <!-- <div class="grid-left image-wrapper">
@@ -458,13 +456,6 @@
 
   <script>
     !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
-
-    // if (screen.width < 950) {
-    //   const weatherWidget = document.querySelector(".weather__widget");
-    //   console.log(weatherWidget)
-    //   console.log(screen.width)
-    //   weatherWidget.style.removeProperty("height");
-    // }
   </script>
 
 </body>

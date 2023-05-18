@@ -161,5 +161,9 @@
     @include title($black, $font-rail);
     padding-top: 0px;
     padding-bottom: 50px;
+
+    &__padding-top {
+      padding-top: 50px;
+    }
   }
 }
