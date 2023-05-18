@@ -26,6 +26,10 @@
     justify-content: space-between;
   }
 
+  &__column {
+    max-width: 620px;
+  }
+
   @media (max-width: 950px) {
     .footer {
       &__row {

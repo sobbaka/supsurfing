@@ -699,6 +699,9 @@
   display: flex;
   justify-content: space-between;
 }
+.footer__column {
+  max-width: 620px;
+}
 @media (max-width: 950px) {
   .footer .footer__row {
     flex-direction: column-reverse;
