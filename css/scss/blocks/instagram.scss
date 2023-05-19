@@ -4,6 +4,10 @@
   overflow: hidden;
   position: relative;
 
+  &__items {
+    padding-bottom: 20px;
+  }
+
   &__btn-wrapper {
     top: -150px;
     position: relative;
@@ -30,6 +34,15 @@
 
   &__link {
     color: $green;
+  }
+
+  @media (max-width: 1280px) {
+    .instagram {
+      &__header {
+        row-gap: 50px;
+        padding-bottom: 32px;
+      }
+    }
   }
 
   @media (max-width: 950px) {

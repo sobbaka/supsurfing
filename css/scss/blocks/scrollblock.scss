@@ -12,13 +12,8 @@ $white: #efefef;
   .items {
     position: relative;
     width: calc(1270px + (100vw - 1280px) / 2);
-    //overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-    // transition: all 0.2s;
-    // transform: scale(0.98);
-    // will-change: transform;
-    // user-select: none;
     cursor: pointer;
   }
 
@@ -33,7 +28,7 @@ $white: #efefef;
   }
 
   .items::-webkit-scrollbar-thumb {
-    height: 3px;
+    height: 20px;
     background-color: $green;
     border-radius: 20px;
   }
@@ -47,7 +42,7 @@ $white: #efefef;
   }
 
   .items.active {
-    background: rgba(255, 255, 255, 0.3);
+    // background: rgba(255, 255, 255, 0.3);
     cursor: grabbing;
     cursor: -webkit-grabbing;
   }

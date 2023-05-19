@@ -21,6 +21,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+
+
+  let prevScrollpos = window.pageYOffset;
+  window.onscroll = function () {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      header.style.top = "25px";
+    } else {
+      header.style.top = "-80px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
 });
 
 

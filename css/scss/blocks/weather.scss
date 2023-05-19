@@ -1,26 +1,12 @@
 .weather {
   padding-bottom: 200px;
 
-  &__widget-mobile {
-    display: none;
-  }
-
   &__widget {
     width: 100%;
   }
 
   @media (max-width: 950px) {
     padding-bottom: 100px;
-
-    &__widget-mobile {
-      display: block;
-      max-width: 620px;
-      margin: 0 auto;
-    }
-
-    &__widget {
-      // display: none;
-    }
 
     &__container {
       padding-top: 50px;

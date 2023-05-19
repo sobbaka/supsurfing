@@ -178,7 +178,7 @@
     width: 900px;
   }
   .items::-webkit-scrollbar-thumb {
-    height: 3px;
+    height: 20px;
     background-color: #03463d;
     border-radius: 20px;
   }
@@ -189,7 +189,6 @@
     display: none;
   }
   .items.active {
-    background: rgba(255, 255, 255, 0.3);
     cursor: grabbing;
     cursor: -webkit-grabbing;
   }
@@ -228,6 +227,7 @@
   backdrop-filter: blur(10px);
   padding: 12px 32px;
   z-index: 100;
+  transition: all 0.5s ease-out;
 }
 .header__controls {
   display: flex;
@@ -316,20 +316,12 @@
 .weather {
   padding-bottom: 200px;
 }
-.weather__widget-mobile {
-  display: none;
-}
 .weather__widget {
   width: 100%;
 }
 @media (max-width: 950px) {
   .weather {
     padding-bottom: 100px;
-  }
-  .weather__widget-mobile {
-    display: block;
-    max-width: 620px;
-    margin: 0 auto;
   }
   .weather__container {
     padding-top: 50px;
@@ -715,6 +707,9 @@
   overflow: hidden;
   position: relative;
 }
+.instagram__items {
+  padding-bottom: 20px;
+}
 .instagram__btn-wrapper {
   top: -150px;
   position: relative;
@@ -738,6 +733,12 @@
 .instagram__link {
   color: #03463d;
 }
+@media (max-width: 1280px) {
+  .instagram .instagram__header {
+    row-gap: 50px;
+    padding-bottom: 32px;
+  }
+}
 @media (max-width: 950px) {
   .instagram__header {
     padding-bottom: 32px;
@@ -760,6 +761,9 @@
 @media (max-width: 750px) {
   .title {
     font-size: 25px;
+  }
+  .text {
+    font-size: 18px;
   }
   .title-block {
     font-family: "Raleway", sans-serif;
