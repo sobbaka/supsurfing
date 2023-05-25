@@ -8,9 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (screen.width > 650) {
     connect.style.left = header.offsetLeft + 10 + 'px';
+    connect.style.top = (subtitle.offsetTop + subtitle.offsetHeight) * 1.1 + 'px';
   }
 
-  connect.style.top = (subtitle.offsetTop + subtitle.offsetHeight) * 1.1 + 'px';
+  connect.classList.remove("none");
+
+
 
 
   connect.addEventListener("click", () => {

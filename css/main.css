@@ -261,6 +261,7 @@
     height: 100vh;
     align-items: center;
     top: 0px;
+    transition: all 0.5s ease-out;
   }
   .header__controls {
     padding-top: 146px;
@@ -465,6 +466,7 @@
   .connect {
     width: 100%;
     padding: 0 15px;
+    bottom: 10%;
   }
   .connect__btn {
     width: 100%;
