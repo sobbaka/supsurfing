@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="./css/main.css">
+  <!-- <link rel="stylesheet" href="./css/burger.css"> -->
 
   <title>Sup surfing в Тбилиси</title>
   <meta name="robots" content="noindex">
@@ -15,8 +16,25 @@
 <body class="body">
 
   <header class="header">
-    <img src="./images/logo/logo.svg" alt="sup.ge logo" class="logo header__logo">
-    <div class="header__controls">
+
+    <img src="./images/logo/logo.svg" alt="sup.ge logo" class="logo header__logo ">
+
+    <div class="header__burger">
+      <div id="menuToggle" class="menuToggle">
+        <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+        <input type="checkbox" class="menuToggle__input" />
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </div>
+    </div>
+
+
+    <div class="header__controls none">
       <div class="header__nav navigation">
         <a href="#" class="navigation__link navigation__link--active">О нас</a>
         <a href="#" class="navigation__link">Аренда</a>
@@ -29,6 +47,7 @@
         <a href="#" class="lang__link">Geo</a>
       </div>
     </div>
+
   </header>
   <div class="subscribe none">
     <button class="subscribe__btn">Забронируйте прогулку</button>
@@ -417,6 +436,7 @@
 
   <script src="./js/main.js"></script>
   <script type="module" src="./js/scroll.js"></script>
+  <script type="module" src="./js/menu.js"></script>
 
   <script>
     !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');

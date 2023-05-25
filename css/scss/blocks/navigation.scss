@@ -4,4 +4,10 @@
   }
   &__link--active {
   }
+
+  @media (max-width: 950px) {
+    &__link {
+      font-size: 35px;
+    }
+  }
 }
