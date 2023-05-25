@@ -1,8 +1,68 @@
-.subscribe {
-  width: 400px;
-  height: 80px;
+.connect {
   position: fixed;
   z-index: 100;
+  display: flex;
+  column-gap: 20px;
+
+  &__links {
+    display: flex;
+    column-gap: 20px;
+  }
+
+  &__link {
+    width: 48px;
+    height: 48px;
+    background-color: $white;
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link:hover &__stroke {
+    stroke: $white;
+  }
+  &__link:hover &__fill {
+    fill: $white;
+  }
+
+  &__telegram:hover {
+    background: linear-gradient(180deg, #41bce7 0%, #22a6dc 99.64%);
+  }
+
+  &__whatsapp:hover {
+    background: #25d366;
+  }
+
+  &__insta:hover {
+    background: linear-gradient(
+      45deg,
+      #ffd521 14.64%,
+      #ffd020 18.54%,
+      #fec01e 23.42%,
+      #fca71b 28.82%,
+      #fa8316 34.59%,
+      #f85510 40.67%,
+      #f51e09 46.91%,
+      #f30005 50%,
+      #f20007 50.25%,
+      #e1003b 56.83%,
+      #d30067 63.29%,
+      #c70088 69.49%,
+      #bf00a0 75.38%,
+      #bb00af 80.81%,
+      #b900b4 85.36%
+    );
+  }
+
+  &__facebook:hover {
+    background: #1877f2;
+  }
+
+  &__phone:hover {
+    background: #25d366;
+  }
+
   &__btn {
     width: 400px;
     padding: 12px 24px;
