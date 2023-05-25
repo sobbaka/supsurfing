@@ -1,10 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
   const header = document.querySelector('.header');
   const subtitle = document.querySelector('.hero__subtitle');
-  const subscribe = document.querySelector('.subscribe');
+  const connect = document.querySelector('.connect');
+  const connectLinks = document.querySelector(".connect__links");
 
-  subscribe.style.left = header.offsetLeft + 'px';
-  subscribe.style.top = (subtitle.offsetTop + subtitle.offsetHeight) * 1.1 + 'px';
+  connect.style.left = header.offsetLeft + 'px';
+  connect.style.top = (subtitle.offsetTop + subtitle.offsetHeight) * 1.1 + 'px';
+
+
+  connect.addEventListener("click", () => {
+    connectLinks.classList.toggle("connect__links_hidden");
+  })
+
 
 
 
@@ -14,6 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', () => {
     const aboutPosition = about.getBoundingClientRect().top + window.scrollY;
     const headerPosition = header.getBoundingClientRect().top + window.scrollY;
+
+    connectLinks.classList.add("connect__links_hidden");
 
     if (headerPosition >= aboutPosition - 78) {
       header.classList.add("header__state_dark");
