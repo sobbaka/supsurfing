@@ -343,11 +343,6 @@
   max-width: 612px;
   padding-top: 50px;
 }
-@media (max-width: 1280px) {
-  .hero {
-    padding: 0 15px;
-  }
-}
 @media (max-width: 750px) {
   .hero {
     background-position: -733px 0px;
@@ -461,6 +456,18 @@
   .connect {
     flex-direction: column-reverse;
     align-items: center;
+  }
+  .connect__btn {
+    width: 325px;
+  }
+}
+@media (max-width: 650px) {
+  .connect {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .connect__btn {
+    width: 100%;
   }
 }
 
