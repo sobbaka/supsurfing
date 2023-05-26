@@ -7,7 +7,7 @@ sliders.forEach((slider) => {
 
   let winWidth = window.innerWidth;
 
-  console.log(slider.classList)
+  //console.log(slider.classList)
 
   if (slider.classList.contains("services__items") && winWidth > 1280) {
 
@@ -33,7 +33,7 @@ sliders.forEach((slider) => {
       const x = e.pageX - slider.offsetLeft;
       const walk = (x - startX) * 3; //scroll-fast
       slider.scrollLeft = scrollLeft - walk;
-      console.log(walk);
+      // console.log(walk);
     });
   }
 
