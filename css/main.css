@@ -23,6 +23,10 @@ html {
   background-color: #faffee;
 }
 
+.body__overflow_hidden {
+  overflow: hidden;
+}
+
 .text {
   font-family: "Raleway", sans-serif;
   color: #393939;
@@ -364,9 +368,10 @@ html {
     align-items: center;
     top: 0px;
     transition: all 0.5s ease-out;
+    overflow-y: scroll;
   }
   .header__controls {
-    padding-top: 146px;
+    padding-top: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;

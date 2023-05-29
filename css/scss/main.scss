@@ -11,6 +11,10 @@ html {
   background-color: $background;
 }
 
+.body__overflow_hidden {
+  overflow: hidden;
+}
+
 .text {
   @include text($black, $font-rail);
   padding-bottom: 16px;
