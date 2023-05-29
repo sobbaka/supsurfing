@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+
+
   const header = document.querySelector(".header");
   const logo = document.querySelector(".header__logo");
   const menu = document.querySelector(".header__burger");
@@ -16,12 +18,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   links.forEach(link => {
     link.addEventListener("click", () => {
-      menu.classList.toggle("header__burger_active");
-      header.classList.toggle("header__state_active");
-      logo.classList.toggle("none");
-      controls.classList.toggle("header__controls_hidden");
 
-      document.querySelector(".menuToggle__input").checked = false;
+      if (window.innerWidth < 950) {
+        menu.classList.toggle("header__burger_active");
+        header.classList.toggle("header__state_active");
+        logo.classList.toggle("none");
+        controls.classList.toggle("header__controls_hidden");
+        document.querySelector(".menuToggle__input").checked = false;
+      }
+
     })
   })
 })
