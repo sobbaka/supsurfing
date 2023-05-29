@@ -416,11 +416,24 @@ html {
   font-size: 20px;
   font-weight: 700;
 }
+.lang__link:hover {
+  color: #cfcfcf;
+}
+.lang__link--active:hover {
+  color: #fff;
+}
+
 .navigation__link {
   color: #fff;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   font-weight: 700;
+}
+.navigation__link:hover {
+  color: #cfcfcf;
+}
+.navigation__link--active:hover {
+  color: #fff;
 }
 @media (max-width: 950px) {
   .navigation__link {

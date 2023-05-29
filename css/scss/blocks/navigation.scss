@@ -2,7 +2,13 @@
   &__link {
     @include text-mixin($white, $font-rail, 20px, 700);
   }
-  &__link--active {
+
+  &__link:hover {
+    color: #cfcfcf;
+  }
+
+  &__link--active:hover {
+    color: $white;
   }
 
   @media (max-width: 950px) {
