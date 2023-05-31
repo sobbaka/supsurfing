@@ -36,8 +36,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('scroll', () => {
 
-    const header = document.querySelector('.header');
+    // connect.style.removeProperty("top");
+    // connect.style.bottom = 10 + "%";
 
+    const header = document.querySelector('.header');
     console.log(header);
 
     if (!header.classList.contains("header__state_active")) {
