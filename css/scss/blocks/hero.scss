@@ -1,7 +1,7 @@
 @import "../utils/mixin";
 
 .hero {
-  background: no-repeat url("../images/images/hero_image.jpg");
+  background: no-repeat url("../images/images/bg-image-hover.jpg");
   background-size: cover;
   height: 100vh;
   min-height: 800px;
@@ -25,7 +25,7 @@
   // }
 
   @media (max-width: 750px) {
-    background-position: -733px 0px;
+    // background-position: -733px 0px;
 
     &__title {
       @include text-mixin($white, $font-unboun, 45px, 800);

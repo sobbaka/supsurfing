@@ -442,7 +442,7 @@ html {
 }
 
 .hero {
-  background: no-repeat url("../images/images/hero_image.jpg");
+  background: no-repeat url("../images/images/bg-image-hover.jpg");
   background-size: cover;
   height: 100vh;
   min-height: 800px;
@@ -466,9 +466,6 @@ html {
   padding-top: 50px;
 }
 @media (max-width: 750px) {
-  .hero {
-    background-position: -733px 0px;
-  }
   .hero__title {
     color: #fff;
     font-family: "Unbounded", cursive;
@@ -909,6 +906,11 @@ html {
 }
 .social__img {
   width: 28px;
+}
+@media (max-width: 380px) {
+  .social {
+    column-gap: 20px;
+  }
 }
 
 .footer {

@@ -14,4 +14,8 @@
   &__img {
     width: 28px;
   }
+
+  @media (max-width: 380px) {
+    column-gap: 20px;
+  }
 }
