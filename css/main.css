@@ -15,6 +15,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Unbounded:wght@700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Unbounded:wght@700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Unbounded:wght@700;800&display=swap");
+
 html {
   scroll-behavior: smooth;
 }
@@ -125,6 +126,7 @@ html {
 .block__pd-top {
   padding-top: 200px;
 }
+
 .block__pd-top-bottom {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -135,22 +137,27 @@ html {
     padding-top: 50px;
     padding-bottom: 32px;
   }
+
   .title__outer {
     padding-bottom: 50px;
   }
+
   .block__pd-top {
     padding-top: 100px;
   }
+
   .block__pd-top-bottom {
     padding-top: 100px;
     padding-bottom: 100px;
   }
 }
+
 @media (max-width: 1280px) {
   .row {
     flex-direction: column;
   }
 }
+
 @media (max-width: 950px) {
   .container-grid {
     display: grid;
@@ -159,13 +166,16 @@ html {
     grid-template-columns: 1fr;
     justify-items: center;
   }
+
   .grid-right {
     max-width: 620px;
   }
+
   .title-block {
     padding: 50px 0 32px;
   }
 }
+
 /* Radial Out */
 .hvr--radial-out {
   display: inline-block;
@@ -268,6 +278,7 @@ html {
   .scrollblock {
     overflow: hidden;
   }
+
   .items {
     position: relative;
     width: calc(1270px + (100vw - 1280px) / 2);
@@ -275,29 +286,36 @@ html {
     white-space: nowrap;
     cursor: pointer;
   }
+
   .items::-webkit-scrollbar {
     height: 3px;
   }
+
   .items::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0);
     background-color: rgb(206, 204, 204);
     width: 900px;
   }
+
   .items::-webkit-scrollbar-thumb {
     height: 20px;
     background-color: #03463d;
     border-radius: 20px;
   }
+
   .items::-webkit-scrollbar-thumb:hover {
     background-color: #03463d;
   }
+
   .items::-webkit-scrollbar:vertical {
     display: none;
   }
+
   .items.active {
     cursor: grabbing;
     cursor: -webkit-grabbing;
   }
+
   .item {
     display: inline-block;
     min-height: 250px;
@@ -305,21 +323,25 @@ html {
     margin-right: 36px;
     margin-bottom: 25px;
   }
+
   @media screen and (max-width: 500px) {
     .item {
       min-height: 200px;
       min-width: 200px;
     }
   }
+
   .item .item.item11 {
     background: transparent;
   }
 }
+
 @media (max-width: 1280px) {
   .items {
     width: 100%;
   }
 }
+
 .header {
   max-width: 1280px;
   margin: 0 auto;
@@ -335,25 +357,31 @@ html {
   z-index: 9999;
   transition: all 0.5s ease-out;
 }
+
 .header__state_dark {
   background-color: rgba(54, 53, 53, 0.418);
 }
+
 .header__state_hidden {
   top: -80px;
 }
+
 .header__controls {
   display: flex;
   align-items: center;
 }
+
 .header__nav {
   display: flex;
   margin-right: 100px;
   column-gap: 62px;
 }
+
 .header__lang {
   display: flex;
   column-gap: 16px;
 }
+
 @media (max-width: 950px) {
   .header {
     width: calc(100% - 10px);
@@ -361,6 +389,7 @@ html {
     flex-direction: column;
     justify-content: flex-start;
   }
+
   .header__state_active {
     width: 100%;
     border-radius: 0px;
@@ -371,6 +400,7 @@ html {
     transition: all 0.5s ease-out;
     overflow-y: scroll;
   }
+
   .header__controls {
     padding-top: 146px;
     display: flex;
@@ -378,9 +408,11 @@ html {
     align-items: center;
     row-gap: 100px;
   }
+
   .header__controls_hidden {
     display: none;
   }
+
   .header__nav {
     display: flex;
     margin-right: 0px;
@@ -389,22 +421,27 @@ html {
     align-items: flex-start;
     row-gap: 50px;
   }
+
   .header__lang {
     display: flex;
     column-gap: 31px;
     justify-content: center;
   }
+
   .header__logo {
     width: 103px;
   }
+
   .header__burger {
     position: absolute;
     right: 195px;
     top: 5px;
   }
+
   .header__burger_active {
     top: 10px;
   }
+
   .header__state_hidden {
     top: -80px;
   }
@@ -416,9 +453,11 @@ html {
   font-size: 20px;
   font-weight: 700;
 }
+
 .lang__link:hover {
   color: #cfcfcf;
 }
+
 .lang__link--active:hover {
   color: #fff;
 }
@@ -429,24 +468,27 @@ html {
   font-size: 20px;
   font-weight: 700;
 }
+
 .navigation__link:hover {
   color: #cfcfcf;
 }
+
 .navigation__link--active:hover {
   color: #fff;
 }
+
 @media (max-width: 950px) {
   .navigation__link {
     font-size: 35px;
   }
 }
 
-.hero {
+/* .hero {
   background: no-repeat url("../images/images/bg-image-hover.jpg");
   background-size: cover;
   height: 100vh;
   min-height: 800px;
-}
+} */
 .hero__title {
   color: #fff;
   font-family: "Unbounded", cursive;
@@ -456,6 +498,7 @@ html {
   line-height: 99px;
   max-width: 612px;
 }
+
 .hero__subtitle {
   color: #fff;
   font-family: "Raleway", sans-serif;
@@ -465,6 +508,7 @@ html {
   max-width: 612px;
   padding-top: 50px;
 }
+
 @media (max-width: 750px) {
   .hero__title {
     color: #fff;
@@ -474,6 +518,7 @@ html {
     line-height: 56px;
     padding-top: 280px;
   }
+
   .hero__subtitle {
     font-size: 20px;
     line-height: 23px;
@@ -484,9 +529,11 @@ html {
   display: flex;
   justify-content: space-between;
 }
+
 .about__description {
   max-width: 620px;
 }
+
 .about__text:last-child {
   padding-bottom: 0px;
 }
@@ -494,16 +541,20 @@ html {
 .weather {
   padding-bottom: 200px;
 }
+
 .weather__widget {
   width: 100%;
 }
+
 @media (max-width: 950px) {
   .weather {
     padding-bottom: 100px;
   }
+
   .weather__container {
     padding-top: 50px;
   }
+
   .weather__title {
     padding-top: 0px;
   }
@@ -516,6 +567,7 @@ html {
   column-gap: 20px;
   row-gap: 40px;
 }
+
 .connect__links {
   opacity: 1;
   display: flex;
@@ -524,11 +576,13 @@ html {
   transition: all 0.5s ease-out;
   z-index: 80;
 }
+
 .connect__links_hidden {
   opacity: 0;
   margin-left: -225px;
   transition: all 0.5s ease-out;
 }
+
 .connect__link {
   width: 48px;
   height: 48px;
@@ -539,27 +593,35 @@ html {
   justify-content: center;
   transition: all 0.5s ease-out;
 }
+
 .connect__link:hover .connect__stroke {
   stroke: #fff;
 }
+
 .connect__link:hover .connect__fill {
   fill: #fff;
 }
+
 .connect__telegram:hover {
   background: linear-gradient(180deg, #41bce7 0%, #22a6dc 99.64%);
 }
+
 .connect__whatsapp:hover {
   background: #25d366;
 }
+
 .connect__insta:hover {
   background: linear-gradient(45deg, #ffd521 14.64%, #ffd020 18.54%, #fec01e 23.42%, #fca71b 28.82%, #fa8316 34.59%, #f85510 40.67%, #f51e09 46.91%, #f30005 50%, #f20007 50.25%, #e1003b 56.83%, #d30067 63.29%, #c70088 69.49%, #bf00a0 75.38%, #bb00af 80.81%, #b900b4 85.36%);
 }
+
 .connect__facebook:hover {
   background: #1877f2;
 }
+
 .connect__phone:hover {
   background: #25d366;
 }
+
 .connect__btn {
   padding: 12px 24px;
   background-color: #ffffff;
@@ -571,21 +633,25 @@ html {
   font-size: 20px;
   font-weight: 700;
 }
+
 @media (max-width: 950px) {
   .connect {
     flex-direction: column-reverse;
     align-items: center;
   }
+
   .connect__btn {
     width: 325px;
   }
 }
+
 @media (max-width: 650px) {
   .connect {
     width: 100%;
     padding: 0 15px;
     bottom: 10%;
   }
+
   .connect__btn {
     width: 100%;
   }
@@ -596,14 +662,17 @@ html {
   background-size: cover;
   min-height: 1096px;
 }
+
 .rent__column-left {
   display: flex;
   row-gap: 50px;
   flex-direction: column;
 }
+
 .rent__item-left {
   max-width: 510px;
 }
+
 .rent__column-right {
   display: flex;
   flex-direction: row;
@@ -611,9 +680,11 @@ html {
   justify-content: space-between;
   row-gap: 50px;
 }
+
 .rent__item-right {
   width: 290px;
 }
+
 .rent__title {
   font-family: "Raleway", sans-serif;
   color: #fff;
@@ -621,6 +692,7 @@ html {
   font-weight: 800;
   padding-bottom: 100px;
 }
+
 .rent__subtitle {
   color: #fff;
   font-family: "Raleway", sans-serif;
@@ -629,14 +701,17 @@ html {
   line-height: 23px;
   padding-bottom: 20px;
 }
+
 .rent__subtitle--padding-32 {
   padding-bottom: 32px;
 }
+
 .rent__list-item {
   padding-bottom: 10px;
   list-style-type: disc;
   margin-left: 35px;
 }
+
 .rent__text {
   color: #fff;
   font-family: "Raleway", sans-serif;
@@ -644,17 +719,20 @@ html {
   font-weight: 400;
   line-height: 120%;
 }
+
 .rent__text-big {
   color: #fff;
   font-family: "Unbounded", cursive;
   font-size: 35px;
   font-weight: 700;
 }
+
 .rent__price {
   display: flex;
   gap: 32px 127px;
   flex-wrap: wrap;
 }
+
 .rent__price-item {
   max-width: 100px;
 }
@@ -665,26 +743,33 @@ html {
     max-width: 620px;
     padding-bottom: 50px;
   }
+
   .rent__item-left {
     max-width: 100%;
     width: 100%;
   }
+
   .rent__item-right {
     width: 100%;
   }
+
   .rent__price {
     justify-content: space-around;
   }
+
   .rent__row {
     align-items: center;
   }
+
   .rent__column-left {
     padding-bottom: 100px;
   }
 }
+
 .gift {
   min-height: 512px;
 }
+
 .gift__text {
   padding-bottom: 50px;
 }
@@ -694,18 +779,22 @@ html {
     row-gap: 40px;
   }
 }
+
 .form__fieldset {
   padding-bottom: 32px;
 }
+
 .form__row {
   display: flex;
   justify-content: space-between;
 }
+
 .form__column {
   display: flex;
   flex-direction: column;
   row-gap: 32px;
 }
+
 .form__input {
   border: 1px solid #393939;
   border-radius: 10px;
@@ -715,12 +804,15 @@ html {
   font-size: 20px;
   font-weight: 400;
 }
+
 .form__hours {
   width: 30%;
 }
+
 .form__email {
   width: 65%;
 }
+
 .form__submit {
   padding: 17px 0;
   width: 100%;
@@ -739,6 +831,7 @@ html {
   border-radius: 10px;
   overflow: hidden;
 }
+
 .gift-card__head {
   display: flex;
   align-items: center;
@@ -746,20 +839,24 @@ html {
   background-color: #03463d;
   padding: 48px 63px 40px 10px;
 }
+
 .gift-card__logo {
   width: 207px;
   height: 50.14px;
 }
+
 .gift-card__title {
   color: #03463d;
   padding: 69px 0 50px;
 }
+
 .gift-card__tel {
   color: #fff;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   font-weight: 400;
 }
+
 .gift-card__body {
   display: flex;
   flex-direction: column;
@@ -768,10 +865,12 @@ html {
   padding-bottom: 42px;
   background-color: #fff;
 }
+
 .gift-card__footer {
   height: 49px;
   background-color: #03463d;
 }
+
 .gift-card__name {
   padding: 20px 0 26px;
   width: 75%;
@@ -781,9 +880,11 @@ html {
 .services__text-bold {
   margin-bottom: 10px;
 }
+
 .services__list_padding {
   padding-bottom: 20px;
 }
+
 .services__slide {
   min-height: 500px;
   max-width: 400px;
@@ -792,19 +893,24 @@ html {
   justify-content: space-between;
   word-wrap: break-word;
 }
+
 .services__item {
   white-space: normal;
 }
+
 .services__list-item {
   padding-bottom: 4px;
 }
+
 .services__text-comment {
   padding-top: 5px;
 }
+
 .services__list-item__circle {
   list-style-type: disc;
   list-style-position: inside;
 }
+
 .services__footer {
   display: block;
   padding: 10px;
@@ -813,10 +919,12 @@ html {
   border-radius: 10px;
   text-align: center;
 }
+
 .services__items {
   width: 100%;
   max-width: 1280px;
 }
+
 @media (max-width: 420px) {
   .services .services__slide {
     min-height: 645px;
@@ -827,28 +935,36 @@ html {
   .services__items::-webkit-scrollbar {
     display: none;
   }
+
   .services__items::-webkit-scrollbar-track {
     display: none;
   }
+
   .services__items::-webkit-scrollbar-thumb {
     display: none;
   }
+
   .services__items::-webkit-scrollbar-thumb:hover {
     display: none;
   }
+
   .services__items::-webkit-scrollbar:vertical {
     display: none;
   }
 }
+
 .tours {
   overflow: hidden;
 }
+
 .tours__swiper {
   padding-top: 100px;
 }
+
 .tours__slider {
   padding-top: 100px;
 }
+
 @media (max-width: 750px) {
   .tours__slider {
     padding-top: 50px;
@@ -858,6 +974,7 @@ html {
 .lakes__img {
   border-radius: 10px;
 }
+
 .lakes__text {
   padding-top: 32px;
 }
@@ -865,28 +982,34 @@ html {
 .contacts {
   padding-bottom: 200px;
 }
+
 .contacts__row {
   display: grid;
   column-gap: 40px;
   grid-template-columns: 3fr 1fr;
 }
+
 .contacts__link {
   display: block;
   padding-bottom: 16px;
 }
+
 .contacts__info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
 @media (max-width: 950px) {
   .contacts {
     padding-bottom: 100px;
   }
+
   .contacts__row {
     row-gap: 50px;
     grid-template-columns: 1fr;
   }
+
   .contacts__info {
     row-gap: 50px;
   }
@@ -896,6 +1019,7 @@ html {
   display: flex;
   column-gap: 33px;
 }
+
 .social__item {
   display: block;
   width: 48px;
@@ -904,9 +1028,11 @@ html {
   text-align: center;
   padding-top: 10px;
 }
+
 .social__img {
   width: 28px;
 }
+
 @media (max-width: 380px) {
   .social {
     column-gap: 20px;
@@ -919,6 +1045,7 @@ html {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
 .footer__title {
   font-family: "Unbounded", cursive;
   color: #fff;
@@ -927,21 +1054,26 @@ html {
   line-height: 120%;
   padding-bottom: 40px;
 }
+
 .footer__text {
   color: #fff;
 }
+
 .footer__tel {
   display: block;
   color: #fff;
   padding-bottom: 16px;
 }
+
 .footer__row {
   display: flex;
   justify-content: space-between;
 }
+
 .footer__column {
   max-width: 620px;
 }
+
 @media (max-width: 950px) {
   .footer .footer__row {
     flex-direction: column-reverse;
@@ -955,14 +1087,17 @@ html {
   overflow: hidden;
   position: relative;
 }
+
 .instagram__items {
   padding-bottom: 20px;
 }
+
 .instagram__btn-wrapper {
   top: -150px;
   position: relative;
   max-width: 1280px;
 }
+
 .instagram__slide {
   overflow: hidden;
   border-radius: 10px;
@@ -971,22 +1106,27 @@ html {
   height: 296px;
   width: 296px;
 }
+
 .instagram__header {
   padding-bottom: 100px;
 }
+
 .instagram__img {
   width: 296px;
   height: auto;
 }
+
 .instagram__link {
   color: #03463d;
 }
+
 @media (max-width: 1280px) {
   .instagram .instagram__header {
     row-gap: 50px;
     padding-bottom: 32px;
   }
 }
+
 @media (max-width: 950px) {
   .instagram__header {
     padding-bottom: 32px;
@@ -1002,6 +1142,7 @@ html {
   -webkit-user-select: none;
   user-select: none;
 }
+
 .menuToggle__input {
   display: none;
   width: 40px;
@@ -1016,10 +1157,12 @@ html {
   /* and place it over the hamburger */
   -webkit-touch-callout: none;
 }
+
 @media (max-width: 950px) {
   .menuToggle {
     display: block;
   }
+
   .menuToggle__input {
     display: block;
   }
@@ -1053,7 +1196,7 @@ html {
  * Transform all the slices of hamburger
  * into a crossmark.
  */
-.menuToggle input:checked ~ span {
+.menuToggle input:checked~span {
   opacity: 1;
   transform: rotate(40deg) translate(-8px, -14px);
   background: #fff;
@@ -1062,7 +1205,7 @@ html {
 /*
  * But let's hide the middle one.
  */
-.menuToggle input:checked ~ span:nth-last-child(3) {
+.menuToggle input:checked~span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
@@ -1070,7 +1213,7 @@ html {
 /*
  * Ohyeah and the last one should go the other direction
  */
-.menuToggle input:checked ~ span:nth-last-child(2) {
+.menuToggle input:checked~span:nth-last-child(2) {
   transform: rotate(-40deg) translate(-3px, 9px);
 }
 
@@ -1101,7 +1244,7 @@ html {
 /*
  * And let's slide it in from the left
  */
-.menuToggle input:checked ~ ul {
+.menuToggle input:checked~ul {
   transform: none;
 }
 
@@ -1118,13 +1261,16 @@ html {
     padding: 0 15px;
   }
 }
+
 @media (max-width: 750px) {
   .title {
     font-size: 25px;
   }
+
   .text {
     font-size: 18px;
   }
+
   .title-block {
     font-family: "Raleway", sans-serif;
     color: #393939;
@@ -1133,6 +1279,7 @@ html {
     padding-top: 0px;
     padding-bottom: 50px;
   }
+
   .title-block__padding-top {
     padding-top: 50px;
   }
