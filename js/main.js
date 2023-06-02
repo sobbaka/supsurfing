@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const connect = document.querySelector('.connect');
   const connectLinks = document.querySelector(".connect__links");
 
-  alignButton()
-  connect.classList.remove("none");
+  //alignButton()
+  //connect.classList.remove("none");
 
   window.addEventListener('resize', () => {
     let fixBtnAlign;
@@ -31,16 +31,44 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
 
+
+  function moveConnect() {
+    const initialPosition = (subtitle.offsetTop + subtitle.offsetHeight) * 1.1 + 'px';
+    const finalPosition = window.innerHeight - 150;
+
+    //console.log(connect.style.top)
+
+    if (connect.style.top !== finalPosition + "px") {
+      connect.style.top = initialPosition + "px";
+      connect.animate(
+        [
+          { top: initialPosition },
+          { top: finalPosition + "px" }
+        ],
+        {
+          duration: 2000, // Animation duration in milliseconds
+          easing: "ease",
+          fill: "forwards"
+        }
+      );
+    }
+
+
+
+  }
+
+
   const about = document.querySelector('.about');
   let prevScrollpos = window.pageYOffset;
 
   window.addEventListener('scroll', () => {
 
-    // connect.style.removeProperty("top");
-    // connect.style.bottom = 10 + "%";
+
+
+    //moveConnect()
 
     const header = document.querySelector('.header');
-    console.log(header);
+    //console.log(header);
 
     if (!header.classList.contains("header__state_active")) {
 
