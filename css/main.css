@@ -354,6 +354,9 @@ html {
   display: flex;
   column-gap: 16px;
 }
+.header__logo {
+  width: 103px;
+}
 @media (max-width: 950px) {
   .header {
     width: calc(100% - 10px);
