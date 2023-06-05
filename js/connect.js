@@ -7,8 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const screenWidth = window.innerWidth;
   const screenHeight = window.innerHeight;
   const blockHeroHeight = blockHero.offsetHeight;
-  const connectPositionTop = (subtitle.offsetTop + subtitle.offsetHeight) * 1.1 + 'px';
-  //const connectPositionBottom = screenHeight - 100 + "px";
+  const connectPositionTop = (80 + subtitle.offsetTop + subtitle.offsetHeight) + 'px';
   const connectPositionBottom = screenHeight > 950 ? screenHeight - 100 + "px" : screenHeight - 150 + "px";
 
 
