@@ -47,7 +47,7 @@ html {
 }
 
 .title {
-  font-family: "Raleway", sans-serif;
+  font-family: "Unbounded", cursive;
   color: #393939;
   font-size: 35px;
   font-weight: 800;
@@ -331,6 +331,7 @@ html {
   justify-content: space-between;
   border-radius: 20px;
   backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.168627451);
   padding: 12px 32px;
   z-index: 9999;
   transition: all 0.5s ease-out;
@@ -633,7 +634,7 @@ html {
   width: 290px;
 }
 .rent__title {
-  font-family: "Raleway", sans-serif;
+  font-family: "Unbounded", cursive;
   color: #fff;
   font-size: 35px;
   font-weight: 800;

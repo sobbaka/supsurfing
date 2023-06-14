@@ -27,7 +27,7 @@ html {
 }
 
 .title {
-  @include title($black, $font-rail);
+  @include title($black, $font-unboun);
 }
 
 .title-block {
