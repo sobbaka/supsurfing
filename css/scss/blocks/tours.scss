@@ -11,6 +11,10 @@
     padding-top: 100px;
   }
 
+  &__block-right .text:last-child {
+    padding-bottom: 0px;
+  }
+
   // @media (max-width: 1280px) {
   //   padding: 0 15px;
   // }

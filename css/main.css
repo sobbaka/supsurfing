@@ -859,28 +859,6 @@ html {
     display: none;
   }
 }
-.tours {
-  overflow: hidden;
-}
-.tours__swiper {
-  padding-top: 100px;
-}
-.tours__slider {
-  padding-top: 100px;
-}
-@media (max-width: 750px) {
-  .tours__slider {
-    padding-top: 50px;
-  }
-}
-
-.lakes__img {
-  border-radius: 10px;
-}
-.lakes__text {
-  padding-top: 32px;
-}
-
 .contacts {
   padding-bottom: 200px;
 }
@@ -1122,6 +1100,31 @@ html {
  */
 .menuToggle input:checked ~ ul {
   transform: none;
+}
+
+.tours {
+  overflow: hidden;
+}
+.tours__swiper {
+  padding-top: 100px;
+}
+.tours__slider {
+  padding-top: 100px;
+}
+.tours__block-right .text:last-child {
+  padding-bottom: 0px;
+}
+@media (max-width: 750px) {
+  .tours__slider {
+    padding-top: 50px;
+  }
+}
+
+.lakes__img {
+  border-radius: 10px;
+}
+.lakes__text {
+  padding-top: 32px;
 }
 
 .none {
