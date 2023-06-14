@@ -797,6 +797,9 @@ html {
   border-bottom: 1px solid #393939;
 }
 
+.services {
+  margin-bottom: -30px;
+}
 .services__text-bold {
   margin-bottom: 10px;
 }
@@ -861,6 +864,7 @@ html {
 }
 .contacts {
   padding-bottom: 200px;
+  padding-top: 140px;
 }
 .contacts__row {
   display: grid;
@@ -951,9 +955,6 @@ html {
 .instagram {
   overflow: hidden;
   position: relative;
-}
-.instagram__items {
-  padding-bottom: 20px;
 }
 .instagram__btn-wrapper {
   top: -150px;
