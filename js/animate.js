@@ -13,10 +13,15 @@ function addClassOnFirstAppear(element, className) {
   observer.observe(element);
 }
 
-const elementToObserve = document.querySelectorAll('.animate__animated');
+const elementsLeft = document.querySelectorAll('.animate__animated');
 
-elementToObserve.forEach((title) => {
-  addClassOnFirstAppear(title, 'animate__fadeInLeft');
-})
+elementsLeft.forEach((element) => {
+  if (element.classList.contains('fade__in')) addClassOnFirstAppear(element, 'animate__fadeIn');
 
-// addClassOnFirstAppear(elementToObserve, 'animate__fadeInDown');
+  if (element.classList.contains('fade__right')) addClassOnFirstAppear(element, 'animate__fadeInRight');
+
+  if (element.classList.contains('fade__left')) addClassOnFirstAppear(element, 'animate__fadeInLeft');
+
+});
+
+

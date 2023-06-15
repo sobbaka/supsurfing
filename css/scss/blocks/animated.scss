@@ -2,6 +2,14 @@
   animation-duration: 2s;
 }
 
+.animate__fadeIn.animate__animated {
+  animation-duration: 3s;
+}
+
+.animate__fadeInRight.animate__animated {
+  animation-duration: 2s;
+}
+
 // animate__animated
 .animate__visiable-custom {
   opacity: 0;
