@@ -14,9 +14,10 @@
       min-height: 800px;
     }
   </style>
-
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+  <link rel="icon" href="./images/favicon/favicon-48x48.ico">
   <link rel="shortcut icon" href="./images/logo/favicon.ico">
   <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-touch-icon-76x76.png">
   <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-touch-icon-120x120.png">
@@ -135,12 +136,12 @@
   </div>
 
   <div class="about block__pd-top" id="about">
-    <div class="container container-grid">
+    <div class="container container-grid ">
       <div class="grid-title">
-        <h2 class="title title__inner">О нас</h2>
+        <h2 class="title title__inner animate__visiable-custom animate__animated">О нас</h2>
       </div>
       <img src="./images/images/about.webp" alt="" class="block-image grid-left">
-      <div class="grid-right">
+      <div class="grid-right animate__visiable-custom animate__animated">
         <p class="text about__text">
           SUP - гребля одним веслом на доске. Подходит для людей всех возрастов и уровней подготовки, очень прост в
           освоении.
@@ -167,10 +168,10 @@
           data-raincolor="#ffffff">TBILISI WEATHER</a>
       </div>
       <div class="grid-title">
-        <h2 class="title title__inner">Погода для sup серфинга</h2>
+        <h2 class="title title__inner animate__visiable-custom animate__animated">Погода для sup серфинга</h2>
       </div>
 
-      <div class="grid-right weather__description">
+      <div class="grid-right weather__description animate__visiable-custom animate__animated">
         <p class="text weather__text">
           Для сап-серфинга, как и для любых других видов водного спорта, погода играет важную роль. Сильный ветер
           или штормовые условия могут сделать sup серфинг небезопасным и неудобным. Кроме того, погода может влиять на
@@ -360,11 +361,11 @@
     <div class="container">
       <div class="container-grid">
         <div class="grid-title">
-          <h2 class="title title__inner">Однодневные Sup туры</h2>
+          <h2 class="title title__inner animate__visiable-custom animate__animated">Однодневные Sup туры</h2>
         </div>
         <img src="./images/images/tours_left.webp" alt="" class="block-image grid-left" loading="lazy">
 
-        <div class="grid-right tours__block-right">
+        <div class="grid-right tours__block-right animate__visiable-custom animate__animated">
           <p class="text">Мы устраиваем sup туры недалеко от Тбилиси на Жинвальское водохранилище, озеро Сиони, озеро
             Паравани, Цалкинское водохранилище, озеро Базалети. Можем организовать трансфер либо просто доставить
             оборудование на необходимую локацию.</p>
@@ -411,7 +412,7 @@
     </div>
   </div>
 
-  <div class="instagram block__pd-top">
+  <div class="instagram block__pd-top animate__visiable-custom animate__animated">
     <div class="container">
       <div class="row instagram__header">
         <h2 class="title">Подпишитесь на наш Instagram</h2>
@@ -537,6 +538,7 @@
   <script type="module" src="./js/scroll.js"></script>
   <script type="module" src="./js/menu.js"></script>
   <script type="module" src="./js/connect.js"></script>
+  <script type="module" src="./js/animate.js"></script>
 
   <script>
     !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');

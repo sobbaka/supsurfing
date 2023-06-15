@@ -880,6 +880,10 @@ html {
   flex-direction: column;
   justify-content: space-between;
 }
+.contacts__social {
+  column-gap: 15px;
+  justify-content: space-evenly;
+}
 @media (max-width: 950px) {
   .contacts {
     padding-bottom: 100px;
@@ -1126,6 +1130,14 @@ html {
 }
 .lakes__text {
   padding-top: 32px;
+}
+
+.animate__fadeInLeft.animate__animated {
+  animation-duration: 2s;
+}
+
+.animate__visiable-custom {
+  opacity: 0;
 }
 
 .none {
