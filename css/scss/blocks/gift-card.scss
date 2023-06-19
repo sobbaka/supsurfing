@@ -43,4 +43,18 @@
     width: 75%;
     border-bottom: 1px solid $black;
   }
+
+  @media (max-width: 470px) {
+    &__head {
+      padding: 40px 22px 40px 10px;
+    }
+    &__logo {
+      width: 147px;
+    }
+  }
+  @media (max-width: 400px) {
+    &__tel {
+      font-size: 16px;
+    }
+  }
 }

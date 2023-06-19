@@ -526,6 +526,10 @@ html {
   .weather__title {
     padding-top: 0px;
   }
+  .weather__widget {
+    width: 100%;
+    max-width: 620px;
+  }
 }
 
 .connect {
@@ -707,12 +711,20 @@ html {
 .gift__text {
   padding-bottom: 50px;
 }
-
 @media (max-width: 1280px) {
   .gift__container-grid {
     row-gap: 40px;
   }
 }
+@media (max-width: 950px) {
+  .gift__grid-left {
+    max-width: 620px;
+  }
+  .gift__grid-right {
+    width: 100%;
+  }
+}
+
 .form__fieldset {
   padding-bottom: 32px;
 }
@@ -796,6 +808,19 @@ html {
   width: 75%;
   border-bottom: 1px solid #393939;
 }
+@media (max-width: 470px) {
+  .gift-card__head {
+    padding: 40px 22px 40px 10px;
+  }
+  .gift-card__logo {
+    width: 147px;
+  }
+}
+@media (max-width: 400px) {
+  .gift-card__tel {
+    font-size: 16px;
+  }
+}
 
 .services {
   margin-bottom: -30px;
@@ -862,41 +887,6 @@ html {
     display: none;
   }
 }
-.contacts {
-  padding-bottom: 200px;
-  padding-top: 140px;
-}
-.contacts__row {
-  display: grid;
-  column-gap: 40px;
-  grid-template-columns: 3fr 1fr;
-}
-.contacts__link {
-  display: block;
-  padding-bottom: 16px;
-}
-.contacts__info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.contacts__social {
-  column-gap: 15px;
-  justify-content: space-evenly;
-}
-@media (max-width: 950px) {
-  .contacts {
-    padding-bottom: 100px;
-  }
-  .contacts__row {
-    row-gap: 50px;
-    grid-template-columns: 1fr;
-  }
-  .contacts__info {
-    row-gap: 50px;
-  }
-}
-
 .social {
   display: flex;
   column-gap: 33px;
@@ -1137,7 +1127,7 @@ html {
 }
 
 .animate__fadeIn.animate__animated {
-  animation-duration: 3s;
+  animation-duration: 2s;
 }
 
 .animate__fadeInRight.animate__animated {
@@ -1146,6 +1136,41 @@ html {
 
 .animate__visiable-custom {
   opacity: 0;
+}
+
+.contacts {
+  padding-bottom: 200px;
+  padding-top: 140px;
+}
+.contacts__row {
+  display: grid;
+  column-gap: 40px;
+  grid-template-columns: 3fr 1fr;
+}
+.contacts__link {
+  display: block;
+  padding-bottom: 16px;
+}
+.contacts__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contacts__social {
+  column-gap: 15px;
+  justify-content: space-between;
+}
+@media (max-width: 950px) {
+  .contacts {
+    padding-bottom: 100px;
+  }
+  .contacts__row {
+    row-gap: 50px;
+    grid-template-columns: 1fr;
+  }
+  .contacts__info {
+    row-gap: 50px;
+  }
 }
 
 .none {

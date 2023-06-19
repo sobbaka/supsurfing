@@ -5,12 +5,19 @@
   &__text {
     padding-bottom: 50px;
   }
-}
-
-@media (max-width: 1280px) {
-  .gift {
+  @media (max-width: 1280px) {
     &__container-grid {
       row-gap: 40px;
+    }
+  }
+
+  @media (max-width: 950px) {
+    &__grid-left {
+      max-width: 620px;
+    }
+
+    &__grid-right {
+      width: 100%;
     }
   }
 }
