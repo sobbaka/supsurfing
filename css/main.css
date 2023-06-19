@@ -909,7 +909,7 @@ html {
 }
 
 .footer {
-  min-height: 383px;
+  min-height: 400px;
   background-color: #393939;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -938,6 +938,9 @@ html {
   max-width: 620px;
 }
 @media (max-width: 950px) {
+  .footer .footer {
+    min-height: 450px;
+  }
   .footer .footer__row {
     flex-direction: column-reverse;
     row-gap: 30px;
